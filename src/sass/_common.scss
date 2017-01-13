@@ -1,0 +1,49 @@
+body{
+  background: #FFF;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/*fonts mixins start*/
+@mixin helvetica-bold{
+  font-family: "HelveticaNeueCyrBold";
+  font-weight: bold;
+  font-style: normal;
+}
+@mixin helvetica-medium{
+  font-family: "HelveticaNeueCyrMedium";
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin helvetica-light{
+  font-family: "HelveticaNeueCyrLight";
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin helvetica-thin{
+  font-family: "HelveticaNeueCyrThin";
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin helvetica-roman{
+  font-family: "HelveticaNeueCyrRoman";
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin wingding{
+  font-family: "WingDing 2";
+  font-weight: normal;
+  font-style: normal;
+}
+/*fonts mixins end*/
+
+/*function px to em start*/
+
+@function em($px){
+
+  @return ($px / 16) * 1 + em;
+  
+}
+
+/*function px to em end*/
+

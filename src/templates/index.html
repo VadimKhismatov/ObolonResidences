@@ -1,0 +1,35 @@
+--- title: Obolon Residences --- {% extends "layouts/_layout.html" %} {% block content %}
+
+<!--HEADER start-->
+<header class="header">
+	<!--LOGO start-->
+	<div class="logo_wrap">
+		<div class="logo"></div>
+	</div>
+	<!--LOGO end-->
+
+	<!--CONTAINER start-->
+	<section class="container container--header">
+
+		<!--TOP CONTACTS start-->
+		{%include "partials/_top-contacts.html"%}
+		<!--TOP CONTACTS end-->
+
+	</section>
+	<!--CONTAINER end-->
+
+	<div class="border_line">
+
+		<!--CONTAINER start-->
+
+		<section class="container">
+			{%include "partials/_menu.html"%}
+		</section>
+
+		<!--CONTAINER end-->
+
+	</div>
+</header>
+<!--HEADER end-->
+
+{% endblock %}

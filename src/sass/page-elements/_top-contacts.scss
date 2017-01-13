@@ -1,0 +1,49 @@
+/*top-contacts start*/
+
+.top_contacts{
+    float: right;
+}
+
+.contact_block{
+    float: left;
+    margin: 0 11px 0 0;
+}
+.contact_tel{
+    margin: 27px 0 0px 0;
+    @include helvetica-medium;
+    font-size: em(18);
+    color: #383430;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.contact_appointment{
+    margin: 6px 0 0 0;
+    @include helvetica-light;
+    font-size: em(14);
+    background-color: #901313;
+}
+.contact_appointment__link{
+    display: block;
+    padding: 10px 15px 11px 16px;
+    color: #ffffff;
+    letter-spacing: 1px;
+
+}
+
+.lang_block{
+    float: right;
+    margin: 25px 0 0 0;
+}
+
+.lang_link{
+    display: block;
+    text-decoration: none;
+    @include helvetica-light;
+    font-size: em(14);
+    color: #a6a6a6;
+        
+        &:hover{
+            text-decoration: underline;
+        }
+}
+/*top-contacts end*/

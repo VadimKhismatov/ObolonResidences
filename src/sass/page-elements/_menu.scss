@@ -1,0 +1,30 @@
+/*menu start*/
+.menu_left_wrap{
+    float: left;
+    margin: 0 0 0 40px;
+}
+
+.menu_right_wrap{
+    float: right;
+    margin: 0 39px 0 0;
+}
+
+.menu__item{
+    float: left;
+}
+.menu{
+    overflow: hidden;
+}
+
+.menu__link{
+    display: block;
+    text: {
+        decoration: none;
+        transform: uppercase;
+    };
+
+    @include helvetica-light;
+    font-size: em(12);
+    color: #a59864;
+}
+/*menu end*/
