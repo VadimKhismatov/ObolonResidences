@@ -9,12 +9,34 @@
     margin: 0 39px 0 0;
 }
 
-.menu__item{
-    float: left;
-}
 .menu{
     overflow: hidden;
 }
+.menu__item{
+    float: left;
+}
+.menu__item--benefits{
+    margin: 0 49px 0 0;
+}
+.menu__item--location{
+    margin: 0 45px 0 0;
+}
+.menu__item--galary{
+    margin: 0 44px 0 0;
+    letter-spacing: 0.5px;
+}
+.menu__item--apartments{
+    margin: 0 0 0 0;
+}
+.menu__item--developer{
+    margin: 0px 0 0 64px;
+    letter-spacing: 0.5px;
+}
+.menu__item--contacts{
+    margin: 0 0px 0 55px;
+    letter-spacing: 0.5px;
+}
+
 
 .menu__link{
     display: block;
@@ -24,7 +46,12 @@
     };
 
     @include helvetica-light;
+    font-weight: bold;
     font-size: em(12);
     color: #a59864;
+}
+
+.menu__link--active{
+    color: #191821;
 }
 /*menu end*/
