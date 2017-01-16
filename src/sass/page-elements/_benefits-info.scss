@@ -1,0 +1,106 @@
+/*benefits info start*/
+.benefits_block__info{
+    background-color: #f9f9f9;
+}
+
+.benefit{
+    float: left;
+    width: 307px;
+    margin: 0 0 0 40px;
+    padding: 40px 0 40px 0;
+
+    @include helvetica-light;
+
+    font-size: em(14);
+    font-weight: bold;
+    color: #191821;
+    line-height: 1.22;
+    & p{
+         margin: 0 8px 16px 0;
+         &:last-child{
+             margin-bottom: 0;
+         }
+    }
+}
+/*benefits info end*/
+
+/*benefits galary start*/
+
+.benefits_galary{
+    width: 100%;
+    overflow: hidden;
+}
+.benefits_galary__row{
+    overflow: hidden;
+}
+.benefits_galary__row--second{
+    overflow: hidden;
+    padding: 0 40px 0 134px;
+
+    & > .galary_item{
+        margin-top: 4px;
+    }
+    
+}
+
+.galary_item{
+    float: left;
+    width: 200px;
+    margin: 70px 26px 0 40px;
+
+    @include helvetica-thin;
+
+    font-size: em(18);
+    font-weight: bold;
+}
+
+.galary_item__title{
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 11px 0px 0 0px;
+}
+.galary_item__title--link{
+    text-decoration: none;
+    color: #272425;
+}
+
+.galary_item__more_info{
+    display: none;
+    position: absolute;
+    top: 18%;
+    left: 18%;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+
+    @include helvetica-light;
+    font-size: em(18);
+    text-align: center;
+    padding: 49px 0px 0 0px;
+    background-color: rgba(181, 181, 181, 0.6);
+    
+    & a{
+    text-decoration: none;
+    color:#fff;
+    }
+}
+
+.galary_item__img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover > .galary_item__more_info{
+        display: block;
+    }
+}
+@each $n in concierge,gym,conference-room,lounge-zone,childs-room,laundry,designe-studio{
+    .galary_item__img--#{$n}{
+        background-image: url("../img/#{$n}.jpg");
+    }
+}
+
+/*benefits galary end*/

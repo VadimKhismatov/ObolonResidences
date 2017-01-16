@@ -1,6 +1,8 @@
 /*slider start*/
 .container--slider{
-    max-width: 1312px;
+    overflow: visible;
+    display: flex;
+    position: relative;
 }
 .slide__img_wrap{
     width: 100%;
@@ -15,7 +17,9 @@
     background-color: #a59864;
 }
 .slide__icon{
-    float: left;
+    position: absolute;
+    top: 0;
+    left: -117px;
     @include s(award);
     &:hover{
         @include s(award-hover);
@@ -26,7 +30,6 @@
 /*slider footer start*/
 
 .slide__info_block{
-    float: left;
     width: 307px;
     margin: 0 0 0 40px;
     padding: 31px 0 33px 0;
@@ -36,7 +39,7 @@
     @include helvetica-light;
     font-size: em(14);
     color: #fff;
-    line-height: 17px;
+    line-height: 1.22;
 }
 /*slider footer end*/
 

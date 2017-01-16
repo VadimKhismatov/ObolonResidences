@@ -296,7 +296,11 @@ body {
 /*menu end*/
 /*slider start*/
 .container--slider {
-  max-width: 1312px;
+  overflow: visible;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
 }
 
 .slide__img_wrap {
@@ -315,7 +319,9 @@ body {
 }
 
 .slide__icon {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: -117px;
   background-image: url("../img/sprite.png");
   width: 116px;
   height: 200px;
@@ -332,7 +338,6 @@ body {
 
 /*slider footer start*/
 .slide__info_block {
-  float: left;
   width: 307px;
   margin: 0 0 0 40px;
   padding: 31px 0 33px 0;
@@ -344,10 +349,143 @@ body {
   font-style: normal;
   font-size: 0.875em;
   color: #fff;
-  line-height: 17px;
+  line-height: 1.22;
 }
 
 /*slider footer end*/
 /*slider end*/
+/*benefits info start*/
+.benefits_block__info {
+  background-color: #f9f9f9;
+}
+
+.benefit {
+  float: left;
+  width: 307px;
+  margin: 0 0 0 40px;
+  padding: 40px 0 40px 0;
+  font-family: "HelveticaNeueCyrLight";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.875em;
+  font-weight: bold;
+  color: #191821;
+  line-height: 1.22;
+}
+
+.benefit p {
+  margin: 0 8px 16px 0;
+}
+
+.benefit p:last-child {
+  margin-bottom: 0;
+}
+
+/*benefits info end*/
+/*benefits galary start*/
+.benefits_galary {
+  width: 100%;
+  overflow: hidden;
+}
+
+.benefits_galary__row {
+  overflow: hidden;
+}
+
+.benefits_galary__row--second {
+  overflow: hidden;
+  padding: 0 40px 0 134px;
+}
+
+.benefits_galary__row--second > .galary_item {
+  margin-top: 4px;
+}
+
+.galary_item {
+  float: left;
+  width: 200px;
+  margin: 70px 26px 0 40px;
+  font-family: "HelveticaNeueCyrThin";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
+.galary_item__title {
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 11px 0px 0 0px;
+}
+
+.galary_item__title--link {
+  text-decoration: none;
+  color: #272425;
+}
+
+.galary_item__more_info {
+  display: none;
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  font-family: "HelveticaNeueCyrLight";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.125em;
+  text-align: center;
+  padding: 49px 0px 0 0px;
+  background-color: rgba(181, 181, 181, 0.6);
+}
+
+.galary_item__more_info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.galary_item__img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galary_item__img:hover > .galary_item__more_info {
+  display: block;
+}
+
+.galary_item__img--concierge {
+  background-image: url("../img/concierge.jpg");
+}
+
+.galary_item__img--gym {
+  background-image: url("../img/gym.jpg");
+}
+
+.galary_item__img--conference-room {
+  background-image: url("../img/conference-room.jpg");
+}
+
+.galary_item__img--lounge-zone {
+  background-image: url("../img/lounge-zone.jpg");
+}
+
+.galary_item__img--childs-room {
+  background-image: url("../img/childs-room.jpg");
+}
+
+.galary_item__img--laundry {
+  background-image: url("../img/laundry.jpg");
+}
+
+.galary_item__img--designe-studio {
+  background-image: url("../img/designe-studio.jpg");
+}
+
+/*benefits galary end*/
 
 /*# sourceMappingURL=app.css.map */
