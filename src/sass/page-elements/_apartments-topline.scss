@@ -1,0 +1,69 @@
+/*apartments topline start*/
+
+.apartments-active{
+    background-color: #b5b5b5;
+    color: #fff;
+}
+.apartments__topline{
+    padding: 0 40px 0 40px;
+    overflow: hidden;
+}
+.apartments__topline__title{
+    @include helvetica-light;
+    font-weight: 300;
+    font-size: em(14);
+    color: #191821;
+    letter-spacing: 0.7px;
+}
+/*choose section start*/
+.choose_section{
+    float: left;
+}
+
+.apartments__topline__wrap{
+    /*width: 307px;*/
+    overflow: hidden;
+    margin: 14px 0 0 0;
+
+    @include helvetica-medium;
+
+    font-size: em(14);
+    font-weight: 500;
+    color: #b5b5b5;
+}
+.choose_section__btn{
+    float: left;
+    width: 150px;
+    padding: 9.5px 0 9.5px 0;
+    border: 1px solid #b5b5b5;
+    border-radius: 2px;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+.choose_section__btn--first{
+    margin: 0 5px 0 0;
+}
+
+/*choose room start*/
+
+.choose_room{
+    float: left;
+    margin: 0 0 0 47px;
+}
+
+.choose_room__btn{
+    float: left;
+    margin: 0 6px 0 0;
+    width: 50px;
+    padding: 9.5px 0 9.5px 0;
+    border: 1px solid #b5b5b5;
+    border-radius: 1px;
+    text-align: center;
+    letter-spacing: 0.7px;
+}
+
+.choose_room__btn--penthouse{
+    width: 150px;
+}
+
+/*apartments topline end*/

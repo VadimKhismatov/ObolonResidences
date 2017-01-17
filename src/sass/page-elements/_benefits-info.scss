@@ -3,7 +3,7 @@
     background-color: #f9f9f9;
 }
 
-.benefit{
+.benefit_info{
     float: left;
     width: 307px;
     margin: 0 0 0 40px;
@@ -37,13 +37,13 @@
     overflow: hidden;
     padding: 0 40px 0 134px;
 
-    & > .galary_item{
+    & > .benefits_galary_item{
         margin-top: 4px;
     }
     
 }
 
-.galary_item{
+.benefits_galary_item{
     float: left;
     width: 200px;
     margin: 70px 26px 0 40px;
@@ -54,17 +54,17 @@
     font-weight: bold;
 }
 
-.galary_item__title{
+.benefits_galary_item__title{
     text-align: center;
     letter-spacing: 1px;
     margin: 11px 0px 0 0px;
 }
-.galary_item__title--link{
+.benefits_galary_item__title--link{
     text-decoration: none;
     color: #272425;
 }
 
-.galary_item__more_info{
+.benefits_galary_item__more_info{
     display: none;
     position: absolute;
     top: 18%;
@@ -85,7 +85,7 @@
     }
 }
 
-.galary_item__img{
+.benefits_galary_item__img{
     position: relative;
     width: 200px;
     height: 200px;
@@ -93,12 +93,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    &:hover > .galary_item__more_info{
+    &:hover > .benefits_galary_item__more_info{
         display: block;
     }
 }
 @each $n in concierge,gym,conference-room,lounge-zone,childs-room,laundry,designe-studio{
-    .galary_item__img--#{$n}{
+    .benefits_galary_item__img--#{$n}{
         background-image: url("../img/#{$n}.jpg");
     }
 }
