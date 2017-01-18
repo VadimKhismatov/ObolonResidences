@@ -1,0 +1,83 @@
+/*form start*/
+.form{
+    text-align: center;
+    padding: 32px 0 25px 0;
+}
+
+.form__title{
+    width: 346px;
+    margin: 0 auto 16px auto;
+    @include helvetica-thin;
+    font-size: em(24);
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 1.1px;
+}
+
+.form__input{
+    width: 346px;
+    height: 31px;
+    margin: 0 0 5px 0;
+    padding: 0 0 0 11px;
+    border: none;
+    @include helvetica-light;
+    font-size: em(14);
+    font-weight: 300;
+    color: #808184;
+    letter-spacing: 0.6px;
+}
+
+.form__textarea{
+    height: 65px;
+    padding: 9px 0 0 11px;
+}
+
+.form__submit{
+    width: 227px;
+    margin: 17px 0 0 1px;
+    padding: 17px 0 17px 0;
+    border: none;
+    background-color: #af1a1a;
+    border-radius: 3px;
+    text-transform: uppercase;
+    @include helvetica-medium;
+    font-size: em(14);
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.7px;
+
+}
+
+/*sign up form start*/
+
+.form--sign_up{
+    width: 650px;
+    height: 321px;
+    background-color: #a59864;
+    margin: 0 auto;
+}
+
+.form__title--sign_up{
+    font-size: em(18);
+    position: relative;
+}
+
+.form--sign_up_close{
+        display: block;
+        position: absolute;
+        top: -5px;
+        right: 6px;
+        width: 15px;
+        height: 15px;
+        @include wingding;
+        font-size: em(24);
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+    }
+/*sign up form end*/
+
+/*form end*/

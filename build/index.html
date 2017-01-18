@@ -15,6 +15,13 @@
     <div class="out">
       <!--HEADER start-->
       <header class="header">
+        <form class="form mfp-hide form--sign_up" id="sign_up_for_viewing">
+          <h1 class="form__title form__title--sign_up">Записаться на просмотр <a href="#!" class="form--sign_up_close">Ñ</a></h1>
+          <p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите Имя"></p>
+          <p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите e-mail/телефон"></p>
+          <p class="form__input_wrap"><textarea class="form__input form__textarea" placeholder="Введите дату и время"></textarea>
+            <p> <input type="submit" class="form__submit" value="Отправить"></p>
+        </form>
         <!--LOGO start-->
         <div class="logo_wrap">
           <div class="logo"></div>
@@ -26,7 +33,7 @@
           <section class="top_contacts">
             <div class="contact_block">
               <p class="contact_tel">+38 (044) 498-26-26</p>
-              <p class="contact_appointment"><a href="#!" class="contact_appointment__link">Записаться на просмотр</a></p>
+              <p class="contact_appointment"><a href="#sign_up_for_viewing" class="contact_appointment__link">Записаться на просмотр</a></p>
             </div>
             <div class="lang_block"> <a href="#!" class="lang_link">рус</a> <a href="#!" class="lang_link">укр</a> <a href="#!" class="lang_link">eng</a> </div>
           </section>
@@ -388,12 +395,12 @@
           <!--footer contacts end-->
           <!--footer form start-->
           <section class="footer__form_wrap">
-            <form class="question_form">
-              <h1 class="question_form__title">Задать Вопрос</h1>
-              <p class="question_form__input_wrap"><input type="text" class="question_form__input" placeholder="Введите Имя"></p>
-              <p class="question_form__input_wrap"><input type="text" class="question_form__input" placeholder="Введите e-mail/телефон"></p>
-              <p class="question_form__input_wrap"><textarea class="question_form__input question_form__textarea" placeholder="Введите коментарий"></textarea>
-                <p> <input type="submit" class="question_form__submit" value="Отправить"></p>
+            <form class="form">
+              <h1 class="form__title">Задать Вопрос</h1>
+              <p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите Имя"></p>
+              <p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите e-mail/телефон"></p>
+              <p class="form__input_wrap"><textarea class="form__input form__textarea" placeholder="Введите коментарий"></textarea>
+                <p> <input type="submit" class="form__submit" value="Отправить"></p>
             </form>
           </section>
           <!--footer form end-->
