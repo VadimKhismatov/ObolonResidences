@@ -96,6 +96,37 @@
 .list__item--total{
     margin: 14px 0 0 0;
 }
+/*measurements links start*/
+
+.measurement__links{
+    display: block;
+
+    @include helvetica-medium;
+    font-size: em(14);
+    font-size: medium;
+    letter-spacing: -0.3px;
+}
+
+.measurement__links--pdf{
+    margin: 23px 0 0 1px;
+    color: #d50202;
+}
+.measurement__links--booklet{
+    margin: 11px 0 0 1px;
+    color: #191821;
+}
+
+/*measurements links end*/
 
 
+/*apartment layout start*/
+
+.apartment_layout{
+    float: left;
+    width: 60%;
+    text-align: center;
+    padding: 34px 0 0 5px;
+}
+
+/*apartment layout end*/
 /*apartments info end*/

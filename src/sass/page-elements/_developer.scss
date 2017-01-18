@@ -1,0 +1,34 @@
+/*developer start*/
+
+.developer{
+    background-image: url("../img/developer-bg.jpg");
+    background-repeat:no-repeat;
+    background-position: right;
+    padding: 0 0 101px 0;
+}
+.developer__logo_wrap{
+    height: 163px;
+    margin: 123px 0 0 12px;
+}
+
+.developer__info_wrap{
+    overflow: hidden;
+}
+
+.developer__info{
+    float: left;
+    width: 307px;
+    margin: 0 0 0 40px;
+    @include helvetica-light;
+    font-size: em(14);
+    font-weight: 300;
+    color: #191821;
+    padding: 9px 0 0 0;
+    letter-spacing: 0.7px;
+    & p{
+        margin: 0 0 16px 0px;
+        line-height: 1.22;
+    }
+}
+
+/*developer end*/

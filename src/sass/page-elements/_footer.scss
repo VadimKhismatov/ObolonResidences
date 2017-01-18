@@ -1,0 +1,130 @@
+/*footer start*/
+.footer{
+    padding-bottom: 101px;
+    background-color: #191821;
+}
+.facebook{
+    float: left;
+    margin: 73px 0 0 40px;
+    width: 307px;
+}
+
+.contacts_block{
+    float: right;
+    width: 654px;
+    margin: 67px 40px 0 0;
+}
+.contact_info_wrap{
+    overflow: hidden;
+}
+.contact{
+    float: left;
+    width: 50%;
+    color: #fff;
+    padding: 0 0 0 31px;
+}
+
+.contact--email{
+    padding: 36px 0 0 6px;
+}
+
+.contact__title{
+    @include helvetica-thin;
+    font-size: em(24);
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin: 0 0 9px 0
+}
+
+.contact__text{
+    @include helvetica-light;
+    font-size: em(14);
+    font-weight: 300;
+    line-height: 1.22;
+    letter-spacing: 0.7px;
+    margin: 0 0 13px 0;
+
+    &--medium{
+        @include helvetica-medium;
+        color: #a59864;
+        font-weight: 500;
+        letter-spacing: 0.7px;
+    }
+}
+
+.cantact__tel{
+    @include helvetica-roman;
+    font-size: em(20);
+    font-weight: 400;
+    letter-spacing: 0.9px;
+}
+
+.contact__email{
+    @include helvetica-light;
+    font-size: em(20);
+    font-weight: 300;
+    color: #a59864;
+    letter-spacing: 0.8px;
+}
+
+/*form start*/
+.footer__form_wrap  {
+    width: 622px;
+    float: right;
+    margin: 14px 42px 0 0;
+    background-color: #a59864;
+}
+
+.question_form{
+    text-align: center;
+    padding: 32px 0 25px 0;
+}
+
+.question_form__title{
+    width: 346px;
+    margin: 0 auto 16px auto;
+    @include helvetica-thin;
+    font-size: em(24);
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    letter-spacing: 1.1px;
+}
+
+.question_form__input{
+    width: 346px;
+    height: 31px;
+    margin: 0 0 5px 0;
+    padding: 0 0 0 11px;
+    border: none;
+    @include helvetica-light;
+    font-size: em(14);
+    font-weight: 300;
+    color: #808184;
+    letter-spacing: 0.6px;
+}
+
+.question_form__textarea{
+    height: 65px;
+    padding: 9px 0 0 11px;
+}
+
+.question_form__submit{
+    width: 227px;
+    margin: 17px 0 0 1px;
+    padding: 17px 0 17px 0;
+    border: none;
+    background-color: #af1a1a;
+    border-radius: 3px;
+    text-transform: uppercase;
+    @include helvetica-medium;
+    font-size: em(14);
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.7px;
+
+}
+/*form end*/
+/*footer end*/

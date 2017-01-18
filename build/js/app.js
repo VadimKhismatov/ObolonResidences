@@ -2752,7 +2752,7 @@ function sayHello() {
 sayHello();
 
 window.onload = function () {
-    /*initMap();*/
+    initMap();
 };
 
 function initMap() {
