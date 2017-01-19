@@ -103,4 +103,67 @@
     }
 }
 
+/*benefits modals start*/
+
+.benefits_modal{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    color: #191821;
+}
+
+.benefits_modal__img{
+    float: left;
+    background-image: url("../img/benefits-modal.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 333px;
+    height: 500px;
+}
+.benefits_modal__info{
+    float: right;
+    width: 667px;
+    padding: 0 0 0 61px;
+
+    h1{
+        float:left;
+        margin: 52px 0 0 0;
+        @include helvetica-thin;
+        font-size: em(24);
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+    }
+    p{
+        margin-bottom: 15px;
+    }
+    ul{
+        list-style-type: disc;
+            margin: 0 0 5px 15px;
+    }
+}
+.benefits_modal__top_line{
+    overflow: hidden;
+}
+
+.benefits_modal__close{
+    display: block;
+    float: right;
+    margin: 32px 35px 0 0;
+    @include s(modal-close);
+
+}
+
+.benefits_modal__text_wrap{
+    margin: 28px 0 0 0;
+    @include helvetica-light;
+    font-size: em(14);
+    font-weight: 300;
+    letter-spacing: 0.6px;
+}
+
+
+/*benefits modals end*/
+
 /*benefits galary end*/

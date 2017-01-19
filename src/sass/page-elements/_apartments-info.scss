@@ -61,25 +61,37 @@
     overflow: hidden;
     margin: 46px 0 0 0;
     width: 228px;
-}
-.list{
+    table{
+    
     line-height: 1.2;
-}
-.list__item{
-    overflow: hidden;
-    margin-bottom: 0.5px;
+        tr{
+            overflow: hidden;
+            margin-bottom: 0.5px;
 
+            td{
+                @include helvetica-light;
+                font-size: em(12);
+                font-weight: bold;
+                color: #191821;
+                letter-spacing: 0.6px;
+            }
+            td:nth-child(2){
+                text-align: right;
+            }
+        }
+        
+        tfoot{
+            td{
+            @include helvetica-medium;
+            font-weight: 500;
+            color: #b8aa86;
+            padding: 20px 0 0 0;
+            }
+        }
+    }
 }
 
-.list__text{
-    float: left;
-    @include helvetica-light;
-    font-size: em(12);
-    font-weight: bold;
-    color: #191821;
-    letter-spacing: 0.6px;
-}
-.list__number{
+/*.list__number{
     float: right;
     @include helvetica-light;
     font-size: em(12);
@@ -87,15 +99,7 @@
     color: #191821;
     letter-spacing: 0.6px;
 
-}
-.list__total{
-    @include helvetica-medium;
-    font-weight: medium;
-    color: #b8aa86;
-}
-.list__item--total{
-    margin: 14px 0 0 0;
-}
+}*/
 /*measurements links start*/
 
 .measurement__links{

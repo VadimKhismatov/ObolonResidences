@@ -7,9 +7,16 @@
 
 sayHello();
 
-window.onload = function () {
-    initMap();
-};
+$(document).ready(function () {
+    mainSlider();
+    formModal();
+    benefitsModal();
+    apartments();
+    webcam();
+    galary();
+    /*initMap();*/
+});
+
 
 function initMap() {
     var mapId = document.getElementById("map");
@@ -36,7 +43,8 @@ function initMap() {
     var mapOptions = {
         center: new google.maps.LatLng(50.513291, 30.499907),
         zoom: 17,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        scrollwheel: false
     };
 
     var map = new google.maps.Map(mapId, mapOptions);
@@ -54,22 +62,99 @@ function initMap() {
 
 
 }
-$(document).ready(function () {
+
+function formModal() {
     $('.contact_appointment__link').magnificPopup({
         type: 'inline',
         modal: true
     });
-});
+    $('.form--sign_up_close').on('click', function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+};
 
-$(document).on('click', '.form--sign_up_close', function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-});
+/*function for modals for benefits */
 
-console.log($(".benefits_block").offset());
 
-$(window).scroll(function(){
-    console.log($(this).scrollTop());
-});
+function benefitsModal() {
+    $(".benefits_modal_link").magnificPopup({
+        type: "inline",
+        modal: true
+    });
+
+    $(".benefits_modal__close").on("click", function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+};
+
+
+function apartments() {
+    var $sectionsBtn = $(".choose_section__btn");
+    $sectionsBtn.eq(1).addClass("apartments-active");
+};
+
+function webcam() {
+
+    $(".webcam").magnificPopup({
+        type: "inline",
+        modal: true
+    });
+
+    $(".webcam_close").on("click", function (e) {
+        e.preventDefault();
+        $.magnificPopup.close();
+    });
+};
+
+function galary() {
+    var $galleryMdl = $(".gallery_modal");
+
+    $(".gallery").on("click", function (e) {
+        e.preventDefault();
+        gallerySlider();
+        $galleryMdl.css("display", "block");
+    });
+
+    $(".gallery_close").on("click", function (e) {
+        e.preventDefault();
+        $galleryMdl.css("display", "none");
+        $(".gallery-slider").slick('unslick');
+    });
+};
+
+
+function mainSlider() {
+    $(".slider").slick({
+        infinity: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        useTransform: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        speed: 1000
+    });
+};
+
+function gallerySlider() {
+
+    $(".gallery-slider").slick({
+        infinity: true,
+        dots: false,
+        arrows: true,
+        prevArrow: $(".gallery_arrow--prev"),
+        nextArrow: $(".gallery_arrow--next"),
+        useTransform: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+}
+
+
 
 
