@@ -3,67 +3,304 @@
 function apartments() {
     console.log("apartments");
 
-    var $btnSectionA = $(".choose_section__btn--a");
-    var $btnSectionB = $(".choose_section__btn--b");
-
-    $btnSectionA.on("click", function () {
-
-        $(this).addClass("section-active").siblings().removeClass("section-active");
-        $(".choose_room--section-b").css("display", "none");
-        $(".choose_room--section-a").css("display", "block");
+    $(".choose_section__btn--a").on("click", function () {
         sectionA();
     });
+    $(".choose_section__btn--b").on("click", function () {
+        sectionB();
+    });
 
-    /* $sectionB.on("click", function () {
-         $(this).addClass("section-active").siblings().removeClass("section-active");
-         $(".choose_room--section-a").css("display", "none");
-         $(".choose_room--section-b").css("display", "block");
-            $titleSection.text("Секция 2");
-            var $roomsB = $(".choose_room--section-b").find(".apartments__topline__rooms").children().eq(0).addClass("room-active");
-         //console.log("rooms in sectionB", roomsB);
-     });*/
+    sectionB();
 
     function sectionA() {
+        var $apartmentsSectionA = $(".apartments_info--section-a");
 
-        var $sectionA = $(".apartments_info--section-a");
-        var $titleSectionA = $sectionA.find(".info__title--section");
-        var $roomTitleSectionA = $sectionA.find(".info__title--rooms");
-        var $allRoomsTypesWraps = $sectionA.find(".info__type-wrap");
-        var $image = $sectionA.find(".apartment_layout img");
-        $titleSectionA.text("секция 1");
+        $(".apartments_info").hide();
+        $(".choose_room--section-b").hide();
+        $apartmentsSectionA.show();
+        var $allRooms = $apartmentsSectionA.find(".room");
+        var $allFlats = $allRooms.find(".flat");
 
-        var $roomsA = $(".choose_room--section-a").find(".apartments__topline__rooms").children() /*.eq(0).addClass("room-active")*/;
-        //console.log("rooms in sectionA", $roomsA);
+        var $btnSectionA = $(".choose_section__btn--a");
 
-        $roomsA.each(function (roomIdx) {
+        $allRooms.css("display", "none");
+        $allFlats.css("display", "none");
+
+        $btnSectionA.addClass("section-active").siblings().removeClass("section-active");
+        $(".choose_room--section-a").css("display", "block");
+        $allRooms.eq(0).show();
+
+        var $btnAllRoomsA = $(".choose_room--section-a").find(".apartments__topline__rooms").children();
+        $btnAllRoomsA.eq(0).addClass("room-active");
+        $allRooms.eq(0).find(".flat_section_1_type1").show();
+
+        $allRooms.eq(0).find(".flat_section_1_type1").find(".info__type").each(function () {
             $(this).on("click", function () {
-                $(this).addClass("room-active").siblings().removeClass("room-active");
-                if (roomIdx === $roomsA.length - 1) {
+                if ($(this).attr("data-type") == "type1") {
+                    return;
+                } else if ($(this).attr("data-type") == "type1p") {
+                    $(".flat_section_1_type1p").show().siblings().hide();
+                }
+            });
+        });
+        $allRooms.eq(0).find(".flat_section_1_type1p").find(".info__type").each(function () {
+            $(this).on("click", function () {
+                if ($(this).attr("data-type") == "type1") {
+                    $(".flat_section_1_type1").show().siblings().hide();
+                } else if ($(this).attr("data-type") == "type1p") {
+                    return;
+                }
+            });
+        });
 
-                    $roomTitleSectionA.text("пентхаус");
-                    $allRoomsTypesWraps.css("display", "none");
-                    $allRoomsTypesWraps.eq(roomIdx).css("display", "block");
+        $btnAllRoomsA.each(function (roomIdx) {
+            $(this).on("click", function () {
+                if ($(this).attr("data-room") == "room1") {
 
-                    $allRoomsTypesWraps.eq(roomIdx).children().each(function () {
+                    $(this).addClass("room-active").siblings().removeClass("room-active");
+                    $allRooms.eq(roomIdx).show().siblings().hide();
+                } else if ($(this).attr("data-room") == "room2") {
+
+                    $(this).addClass("room-active").siblings().removeClass("room-active");
+                    $allRooms.eq(roomIdx).show().siblings().hide();
+                    $allRooms.eq(roomIdx).children().hide();
+                    $allRooms.eq(roomIdx).children().eq(0).show();
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1").find(".info__type").each(function () {
                         $(this).on("click", function () {
-                            $(this).addClass("info__type--active").siblings().removeClass("info__type--active");
-                            $image.attr("alt", "section-1-room-" + (roomIdx + 1) + "-scheme-" + $(this).attr("data-type"));
+                            if ($(this).attr("data-type") == "type1") {
+                                return;
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                $(".flat_section_1_type1p").show().siblings().hide();
+                            }
                         });
                     });
-                } else {
 
-                    $roomTitleSectionA.text(roomIdx + 1 + "-комнатная");
-                    $allRoomsTypesWraps.css("display", "none");
-                    $allRoomsTypesWraps.eq(roomIdx).css("display", "block");
-
-                    $allRoomsTypesWraps.eq(roomIdx).children().each(function (typeIdx) {
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1p").find(".info__type").each(function () {
                         $(this).on("click", function () {
-                            $(this).addClass("info__type--active").siblings().removeClass("info__type--active");
-                            $image.attr("alt", "section-1-room-" + (roomIdx + 1) + "-scheme-" + $(this).attr("data-type"));
+                            if ($(this).attr("data-type") == "type1") {
+                                $(".flat_section_1_type1").show().siblings().hide();
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                return;
+                            }
+                        });
+                    });
+                } else if ($(this).attr("data-room") == "room3") {
+
+                    $(this).addClass("room-active").siblings().removeClass("room-active");
+                    $allRooms.eq(roomIdx).show().siblings().hide();
+                    $allRooms.eq(roomIdx).children().hide();
+                    $allRooms.eq(roomIdx).children().eq(0).show();
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                return;
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                $(".flat_section_1_type1p").show().siblings().hide();
+                            }
+                        });
+                    });
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1p").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                $(".flat_section_1_type1").show().siblings().hide();
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                return;
+                            }
+                        });
+                    });
+                } else if ($(this).attr("data-room") == "penthouse") {
+
+                    $(this).addClass("room-active").siblings().removeClass("room-active");
+                    $allRooms.eq(roomIdx).show().siblings().hide();
+                    $allRooms.eq(roomIdx).children().hide();
+                    $allRooms.eq(roomIdx).children().eq(0).show();
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                return;
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                $(".flat_section_1_type1p").show().siblings().hide();
+                            }
+                        });
+                    });
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1p").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                $(".flat_section_1_type1").show().siblings().hide();
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                return;
+                            }
                         });
                     });
                 }
             });
         });
-    };
+    }
+
+    function sectionB() {
+        var $apartmentsSectionB = $(".apartments_info--section-b");
+        $(".apartments_info").hide();
+        $(".choose_room--section-a").hide();
+        $apartmentsSectionB.show();
+        var $allRooms = $apartmentsSectionB.find(".room");
+        var $allFlats = $allRooms.find(".flat");
+
+        var $btnSectionB = $(".choose_section__btn--b");
+
+        $allRooms.css("display", "none");
+        $allFlats.css("display", "none");
+
+        $btnSectionB.addClass("section-active").siblings().removeClass("section-active");
+        $(".choose_room--section-b").css("display", "block");
+        $allRooms.eq(0).show();
+
+        var $btnAllRoomsB = $(".choose_room--section-b").find(".apartments__topline__rooms").children();
+        $btnAllRoomsB.eq(0).addClass("room-active");
+        $allRooms.eq(0).find(".flat_section_1_type1").show();
+
+        $allRooms.eq(0).find(".flat_section_1_type1").find(".info__type").each(function () {
+            $(this).on("click", function () {
+                if ($(this).attr("data-type") == "type1") {
+                    return;
+                } else if ($(this).attr("data-type") == "type1p") {
+                    $(".flat_section_1_type1p").show().siblings().hide();
+                }
+            });
+        });
+        $allRooms.eq(0).find(".flat_section_1_type1p").find(".info__type").each(function () {
+            $(this).on("click", function () {
+                if ($(this).attr("data-type") == "type1") {
+                    $(".flat_section_1_type1").show().siblings().hide();
+                } else if ($(this).attr("data-type") == "type1p") {
+                    return;
+                }
+            });
+        });
+
+        $btnAllRoomsB.each(function (roomIdx) {
+            $(this).on("click", function () {
+                if ($(this).attr("data-room") == "room1") {
+
+                    $(this).addClass("room-active").siblings().removeClass("room-active");
+                    $allRooms.eq(roomIdx).show().siblings().hide();
+                } else if ($(this).attr("data-room") == "room2") {
+
+                    $(this).addClass("room-active").siblings().removeClass("room-active");
+                    $allRooms.eq(roomIdx).show().siblings().hide();
+                    $allRooms.eq(roomIdx).children().hide();
+                    $allRooms.eq(roomIdx).children().eq(0).show();
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                return;
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                $(".flat_section_1_type1p").show().siblings().hide();
+                            }
+                        });
+                    });
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1p").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                $(".flat_section_1_type1").show().siblings().hide();
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                return;
+                            }
+                        });
+                    });
+                } else if ($(this).attr("data-room") == "room3") {
+
+                    $(this).addClass("room-active").siblings().removeClass("room-active");
+                    $allRooms.eq(roomIdx).show().siblings().hide();
+                    $allRooms.eq(roomIdx).children().hide();
+                    $allRooms.eq(roomIdx).children().eq(0).show();
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                return;
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                $(".flat_section_1_type1p").show().siblings().hide();
+                            }
+                        });
+                    });
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1p").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                $(".flat_section_1_type1").show().siblings().hide();
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                return;
+                            }
+                        });
+                    });
+                } else if ($(this).attr("data-room") == "room4") {
+
+                    $(this).addClass("room-active").siblings().removeClass("room-active");
+                    $allRooms.eq(roomIdx).show().siblings().hide();
+                    $allRooms.eq(roomIdx).children().hide();
+                    $allRooms.eq(roomIdx).children().eq(0).show();
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                return;
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                $(".flat_section_1_type1p").show().siblings().hide();
+                            }
+                        });
+                    });
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1p").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                $(".flat_section_1_type1").show().siblings().hide();
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                return;
+                            }
+                        });
+                    });
+                } else if ($(this).attr("data-room") == "penthouse") {
+
+                    $(this).addClass("room-active").siblings().removeClass("room-active");
+                    $allRooms.eq(roomIdx).show().siblings().hide();
+                    $allRooms.eq(roomIdx).children().hide();
+                    $allRooms.eq(roomIdx).children().eq(0).show();
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                return;
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                $(".flat_section_1_type1p").show().siblings().hide();
+                            }
+                        });
+                    });
+
+                    $allRooms.eq(roomIdx).find(".flat_section_1_type1p").find(".info__type").each(function () {
+                        $(this).on("click", function () {
+                            if ($(this).attr("data-type") == "type1") {
+                                $(".flat_section_1_type1").show().siblings().hide();
+                            } else if ($(this).attr("data-type") == "type1p") {
+                                return;
+                            }
+                        });
+                    });
+                }
+            });
+        });
+    }
 };
+
+$(".apartment_layout").on("click", function () {
+    $(".flat_modal").show();
+    $(".flat_modal__close").on("click", function () {
+        $(".flat_modal").hide();
+    });
+});

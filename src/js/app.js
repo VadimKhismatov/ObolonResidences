@@ -14,7 +14,7 @@ $(document).ready(function () {
     apartments();
     webcam();
     galary();
-    /*initMap();*/
+    initMap();
 });
 
 
