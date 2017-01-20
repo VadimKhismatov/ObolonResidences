@@ -234,20 +234,31 @@
             <div class="choose_section">
               <p class="apartments__topline__title">1. Выберите секцию</p>
               <div class="apartments__topline__sections">
-                <div class="choose_section__btn choose_section__btn--first">Секция 1</div>
-                <div class="choose_section__btn choose_section__btn--second">Секция 2</div>
+                <div class="choose_section__btn choose_section__btn--a">Секция 1</div>
+                <div class="choose_section__btn choose_section__btn--b">Секция 2</div>
               </div>
             </div>
             <!--choose secction end-->
-            <!--choose room start-->
-            <div class="choose_room">
+            <!--choose room section-one start-->
+            <div class="choose_room choose_room--section-a">
               <p class="apartments__topline__title">2. Выберите кол-во комнат</p>
               <div class="apartments__topline__rooms">
-                <div class="choose_room__btn">1</div>
-                <div class="choose_room__btn">2</div>
-                <div class="choose_room__btn">3</div>
-                <div class="choose_room__btn">4</div>
-                <div class="choose_room__btn choose_room__btn--penthouse">Пентхаус</div>
+                <div class="choose_room__btn choose__btn--section-a">1</div>
+                <div class="choose_room__btn choose__btn--section-a">2</div>
+                <div class="choose_room__btn choose__btn--section-a">3</div>
+                <div class="choose_room__btn choose__btn--section-a">4</div>
+                <div class="choose_room__btn choose_room__btn--penthouse  choose__penthouse--section-a">Пентхаус</div>
+              </div>
+            </div>
+            <!--choose room end-->
+            <!--choose room section-two start-->
+            <div class="choose_room choose_room--section-b">
+              <p class="apartments__topline__title">2. Выберите кол-во комнат</p>
+              <div class="apartments__topline__rooms">
+                <div class="choose_room__btn choose__btn--section-b">1</div>
+                <div class="choose_room__btn choose__btn--section-b">2</div>
+                <div class="choose_room__btn choose__btn--section-b">3</div>
+                <div class="choose_room__btn choose_room__btn--penthouse choose__penthouse--section-b">Пентхаус</div>
               </div>
             </div>
             <!--choose room end-->
@@ -255,15 +266,19 @@
           <!--apartments topline end-->
           <!--apartments info block start-->
           <!--apartments info start-->
-          <section class="apartments_info">
+          <section class="apartments_info apartments_info--section-a">
             <!--info start-->
             <section class="info">
-              <h1 class="info__title">СЕКЦИЯ 2 <br> 4-КОМНАТНАЯ</h1>
-              <div class="info__type-wrap"> <a href="#!" class="info__type info__type--active">Тип1</a> <a href="#!" class="info__type">Тип П1</a> </div>
-              <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+              <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ </span><br> <span class="info__title--rooms">-КОМНАТНАЯ</span></h1>
+              <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Тип1</a> <a href="#!" class="info__type" data-type="type1p">Тип П1</a> </div>
+              <div class="info__type-wrap info__type-wrap-room2"> <a href="#!" class="info__type" data-type="type2">Тип2</a> <a href="#!" class="info__type" data-type="type2p">Тип П2</a> </div>
+              <div class="info__type-wrap info__type-wrap-room3"> <a href="#!" class="info__type" data-type="type3">Тип3</a> <a href="#!" class="info__type" data-type="type3p">Тип П3</a> </div>
+              <div class="info__type-wrap info__type-wrap-room4"> <a href="#!" class="info__type" data-type="type4">Тип4</a> <a href="#!" class="info__type" data-type="type4p">Тип П4</a> </div>
+              <div class="info__type-wrap info__type-wrap-room5"> <a href="#!" class="info__type" data-type="type-penthouse1">Пентхаус1</a> <a href="#!" class="info__type" data-type="type-penthouse1p">Пентхаус П1</a> </div>
+              <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 1. Окна выходят на запад, юг и восток.</p>
             </section>
             <!--info end-->
-            <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="scheme-room"> </section>
+            <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt=""> </section>
             <!--measurement start-->
             <section class="measurement">
               <table>

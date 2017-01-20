@@ -21,9 +21,11 @@
     color: #a59864;
     letter-spacing: 0.7px;
     line-height: 1.3;
+    text-transform: uppercase;
 }
 
 .info__type-wrap{
+    display: none;
     margin: 29px 0 0 0;
 
     @include helvetica-medium;
@@ -37,6 +39,10 @@
     color: #b5b5b5;
 
     &--active{
+        color: #a59864;
+    }
+
+    &:hover{
         color: #a59864;
     }
 }

@@ -1,6 +1,6 @@
 /*apartments topline start*/
 
-.apartments-active{
+.section-active, .room-active{
     background-color: #b5b5b5;
     color: #fff;
 }
@@ -46,13 +46,14 @@
         cursor: pointer;
     }
 }
-.choose_section__btn--first{
+.choose_section__btn--a{
     margin: 0 5px 0 0;
 }
 
 /*choose room start*/
 
 .choose_room{
+    display: none;
     float: left;
     margin: 0 0 0 47px;
 }
