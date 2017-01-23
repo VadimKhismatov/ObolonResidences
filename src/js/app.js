@@ -17,6 +17,12 @@ $(document).ready(function () {
     initMap();
 });
 
+function OffScroll() {
+    var winScrollTop = $(window).scrollTop();
+    $(window).bind('scroll', function () {
+        $(window).scrollTop(winScrollTop);
+    });
+}
 
 function initMap() {
     var mapId = document.getElementById("map");
@@ -108,6 +114,7 @@ function galary() {
     $(".gallery").on("click", function (e) {
         e.preventDefault();
         gallerySlider();
+        OffScroll();
         $galleryMdl.css("display", "block");
     });
 
@@ -115,6 +122,7 @@ function galary() {
         e.preventDefault();
         $galleryMdl.css("display", "none");
         $(".gallery-slider").slick('unslick');
+        $(window).unbind("scroll");
     });
 };
 

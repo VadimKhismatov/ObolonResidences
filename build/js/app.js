@@ -4552,6 +4552,10 @@ function apartments() {
 
 	sectionB();
 
+	$(".flat_modal__close").on("click", function () {
+		$(".flat_modal").hide();
+		$(window).unbind('scroll');
+	});
 	function sectionA() {
 		var $apartmentsSectionA = $(".apartments_info--section-a");
 
@@ -4571,6 +4575,7 @@ function apartments() {
 		$allRooms.eq(0).show();
 
 		var $btnAllRoomsA = $(".choose_room--section-a").find(".apartments__topline__rooms").children();
+		$btnAllRoomsA.removeClass("room-active");
 		$btnAllRoomsA.eq(0).addClass("room-active");
 		$allRooms.eq(0).find(".flat_section_1_type1").show();
 
@@ -4680,6 +4685,8 @@ function apartments() {
 				}
 			});
 		});
+
+		flatModal($apartmentsSectionA);
 	}
 
 	function sectionB() {
@@ -4700,6 +4707,7 @@ function apartments() {
 		$allRooms.eq(0).show();
 
 		var $btnAllRoomsB = $(".choose_room--section-b").find(".apartments__topline__rooms").children();
+		$btnAllRoomsB.removeClass("room-active");
 		$btnAllRoomsB.eq(0).addClass("room-active");
 		$allRooms.eq(0).find(".flat_section_1_type1").show();
 
@@ -4835,15 +4843,21 @@ function apartments() {
 				}
 			});
 		});
+		flatModal($apartmentsSectionB);
 	}
-};
 
-$(".apartment_layout").on("click", function () {
-	$(".flat_modal").show();
-	$(".flat_modal__close").on("click", function () {
-		$(".flat_modal").hide();
-	});
-});
+	function flatModal($section) {
+
+		$section.find(".room").each(function () {
+			$(this).find(".flat").each(function () {
+				$(this).find(".apartment_layout").on("click", function () {
+					$(this).parent().find(".flat_modal").show();
+					OffScroll();
+				});
+			});
+		});
+	};
+};
 
 sayHello();
 $(document).ready(function () {
@@ -4855,6 +4869,13 @@ $(document).ready(function () {
 	galary();
 	initMap();
 });
+
+function OffScroll() {
+	var winScrollTop = $(window).scrollTop();
+	$(window).bind('scroll', function () {
+		$(window).scrollTop(winScrollTop);
+	});
+}
 
 function initMap() {
 	var mapId = document.getElementById("map");
@@ -4943,6 +4964,7 @@ function galary() {
 	$(".gallery").on("click", function (e) {
 		e.preventDefault();
 		gallerySlider();
+		OffScroll();
 		$galleryMdl.css("display", "block");
 	});
 
@@ -4950,6 +4972,7 @@ function galary() {
 		e.preventDefault();
 		$galleryMdl.css("display", "none");
 		$(".gallery-slider").slick('unslick');
+		$(window).unbind("scroll");
 	});
 };
 

@@ -112,16 +112,16 @@
 
     @include helvetica-medium;
     font-size: em(14);
-    font-size: medium;
-    letter-spacing: -0.3px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
 }
 
 .measurement__links--pdf{
-    margin: 23px 0 0 1px;
+    margin: 24px 0 0 2px;
     color: #d50202;
 }
 .measurement__links--booklet{
-    margin: 11px 0 0 1px;
+    margin: 14px 0 0 2px;
     color: #191821;
 }
 
@@ -155,13 +155,43 @@
 }
 .flat_modal__container{
     width: 1300px;
-    margin: 266px auto 0 auto;
+    overflow: hidden;
+    margin: 200px auto 0 auto;
 }
 .flat_modal__close{
     @include s(modal-close);
     position: absolute;
     top: 61px;
     right: 71px;
+}
+.flat_modal__layout{
+    float: left;
+}
+.flat_modal__info{
+    float: right;
+    margin: 86px 60px 0 0;
+}
+.info__title--flat_modal{
+    font-size: em(24);
+}
+.measurement--flat_modal{
+        width: 300px;
+    table{
+    
+    
+        tr{
+            
+
+            td{
+               
+                font-size: em(18);
+                
+            }
+        }
+}
+}
+.measurement__links--flat_modal{
+    font-size: em(18);
 }
 /*flat modal end*/
 
