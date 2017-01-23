@@ -4540,6 +4540,29 @@ function sayHello() {
 	/*>>retina*/
 	_checkInstance();
 });
+function mobileMenu() {
+	var $mobMenuWrap = $(".mb_menu_wrap");
+	var $mobMenu = $(".menu_mobile");
+	var $icon = $(".mb_menu_wrap__icon");
+	var $links = $mobMenu.find(".menu__link");
+	$mobMenuWrap.on("click", function (e) {
+		$(this).addClass("mb_menu_wrap--open");
+		$icon.hide();
+		$mobMenu.show();
+
+		$links.each(function () {
+			$(this).on("click", function (e) {
+				e.stopPropagation();
+				$links.removeClass("menu__link--active");
+				$(this).addClass("menu__link--active");
+
+				$mobMenu.hide();
+				$icon.show();
+				$mobMenuWrap.removeClass("mb_menu_wrap--open");
+			});
+		});
+	});
+};
 function apartments() {
 	console.log("apartments");
 
@@ -4861,6 +4884,7 @@ function apartments() {
 
 sayHello();
 $(document).ready(function () {
+	mobileMenu();
 	mainSlider();
 	formModal();
 	benefitsModal();
@@ -4905,6 +4929,10 @@ function initMap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		scrollwheel: false
 	};
+
+	if ($(window).width() <= 320) {
+		mapOptions.zoom = 15;
+	}
 
 	var map = new google.maps.Map(mapId, mapOptions);
 

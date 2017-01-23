@@ -5,10 +5,21 @@
     background-repeat:no-repeat;
     background-position: right;
     padding: 0 0 101px 0;
+    @include r(320){
+        background-image: none;
+    }
 }
 .developer__logo_wrap{
     height: 163px;
     margin: 123px 0 0 12px;
+    @include r(320){
+        margin: 30px 0 0 0 ;
+
+        & img{
+            width: 320px;
+            height: 100px;
+        }
+    }
 }
 
 .developer__info_wrap{
@@ -28,6 +39,12 @@
     & p{
         margin: 0 0 16px 0px;
         line-height: 1.22;
+    }
+    @include r(320){
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 

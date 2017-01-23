@@ -14,6 +14,11 @@
     color: #fff;
     text-align: left;
     letter-spacing: 1.1px;
+
+    @include r(320){
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .form__input{
@@ -27,6 +32,9 @@
     font-weight: 300;
     color: #808184;
     letter-spacing: 0.6px;
+    @include r(320){
+        width: 100%;
+    }
 }
 
 .form__textarea{
@@ -57,11 +65,19 @@
     height: 321px;
     background-color: #a59864;
     margin: 0 auto;
+
+    @include r(320){
+        width: 100%;
+    }
 }
 
 .form__title--sign_up{
     font-size: em(18);
     position: relative;
+    @include r(320){
+        text-align: left;
+        position: static;
+    }
 }
 
 .form--sign_up_close{
@@ -77,6 +93,10 @@
         text-transform: uppercase;
         color: #fff;
         text-decoration: none;
+        @include r(320){
+            top:0px;
+            right: 10px;
+        }
     }
 /*sign up form end*/
 

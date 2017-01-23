@@ -4,10 +4,12 @@
 //=include lib/slick.min.js
 //=include lib/svgxuse.min.js
 //=include lib/jquery.magnific-popup.js
+//=include mobileMenu.js
 //=include apartments.js
 
 sayHello();
 $(document).ready(function () {
+    mobileMenu();
     mainSlider();
     formModal();
     benefitsModal();
@@ -52,6 +54,10 @@ function initMap() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel: false
     };
+
+    if ($(window).width() <= 320) {
+        mapOptions.zoom = 15;
+    }
 
     var map = new google.maps.Map(mapId, mapOptions);
 
@@ -155,5 +161,4 @@ function gallerySlider() {
         speed: 1000
     });
 }
-
 

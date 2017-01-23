@@ -7,6 +7,9 @@
 .apartments__topline{
     padding: 0 40px 0 40px;
     overflow: hidden;
+    @include r(320){
+        padding: 0 5px 0 5px;;
+    }
 }
 .apartments__topline__title{
     @include helvetica-light;
@@ -56,6 +59,9 @@
     display: none;
     float: left;
     margin: 0 0 0 47px;
+    @include r(320){
+        margin: 20px 0 0 0;
+    }
 }
 
 .choose_room__btn{
@@ -76,6 +82,9 @@
 
 .choose_room__btn--penthouse{
     width: 150px;
+    @include r(320){
+        margin-top: 10px;
+    }
 }
 
 /*apartments topline end*/

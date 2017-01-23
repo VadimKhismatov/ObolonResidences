@@ -618,15 +618,27 @@ body {
   border-bottom: 1px solid #fff;
   border-left: 1px solid #fff;
   border-right: 1px solid #fff;
-  z-index: 10000;
+  z-index: 1;
+}
+
+.logo_wrap--mobile {
+  float: left;
+  padding: 5px;
 }
 
 .logo {
   background-image: url("../img/sprite.png");
   width: 155px;
   height: 49px;
-  background-position: -108px -210px;
+  background-position: -361px 0px;
   margin: 76px auto 0 auto;
+}
+
+.logo--mobile {
+  background-image: url("../img/sprite.png");
+  width: 155px;
+  height: 49px;
+  background-position: -108px -210px;
 }
 
 .top_line {
@@ -757,6 +769,41 @@ body {
   color: #191821;
 }
 
+.mb_menu_wrap {
+  transition: all 1s;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: #a59864;
+  z-index: 1;
+}
+
+.mb_menu_wrap__icon {
+  background-image: url("../img/sprite.png");
+  width: 20px;
+  height: 20px;
+  background-position: -481px -59px;
+  margin: 10px 0 0 10px;
+}
+
+.mb_menu_wrap--open {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.menu_mobile {
+  display: none;
+  text-align: center;
+}
+
+.menu_mobile a {
+  padding: 20px;
+}
+
 /*menu end*/
 /*slider start*/
 .slider {
@@ -807,9 +854,9 @@ body {
 
 /*slider footer start*/
 .slide__info_block {
-  width: 307px;
-  margin: 0 0 0 40px;
-  padding: 31px 0 33px 0;
+  width: 300px;
+  margin: 0 10px 0 10px;
+  padding: 5px 0 5px 0;
 }
 
 .slide__info {
@@ -865,7 +912,7 @@ body {
 }
 
 .benefits_galary__row--second > .benefits_galary_item {
-  margin-top: 4px;
+  margin-top: 70px;
 }
 
 .benefits_galary_item {
@@ -1006,7 +1053,7 @@ body {
   background-image: url("../img/sprite.png");
   width: 50px;
   height: 50px;
-  background-position: -361px 0px;
+  background-position: -421px -59px;
 }
 
 .benefits_modal__text_wrap {
@@ -1212,15 +1259,6 @@ body {
   padding: 20px 0 0 0;
 }
 
-/*.list__number{
-    float: right;
-    @include helvetica-light;
-    font-size: em(12);
-    font-weight: bold;
-    color: #191821;
-    letter-spacing: 0.6px;
-
-}*/
 /*measurements links start*/
 .measurement__links {
   display: block;
@@ -1276,7 +1314,7 @@ body {
   background-image: url("../img/sprite.png");
   width: 50px;
   height: 50px;
-  background-position: -361px 0px;
+  background-position: -421px -59px;
   position: absolute;
   top: 61px;
   right: 71px;
@@ -1390,7 +1428,7 @@ body {
   background-image: url("../img/sprite.png");
   width: 50px;
   height: 50px;
-  background-position: -253px -108px;
+  background-position: -361px -59px;
   z-index: 1000;
 }
 
@@ -1649,6 +1687,12 @@ body {
 
 /*sign up form end*/
 /*form end*/
+@media only screen and (min-width: 1024px) {
+
+  .logo_wrap--mobile {
+    display: none;
+  }
+}
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
 
   /**
@@ -1705,6 +1749,12 @@ body {
     padding: 0;
   }
 }
+@media only screen and (max-width: 1023px) {
+
+  .logo_wrap {
+    display: none;
+  }
+}
 @media all and (max-width: 900px) {
 
   .mfp-arrow {
@@ -1728,6 +1778,216 @@ body {
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px;
+  }
+}
+@media only screen and (max-width: 320px) {
+
+  .top_line {
+    display: none;
+  }
+
+  .top_contacts {
+    float: none;
+    overflow: hidden;
+  }
+
+  .contact_block {
+    float: none;
+    margin: 0 0 0 0;
+  }
+
+  .contact_appointment {
+    text-align: center;
+  }
+
+  .lang_block {
+    float: none;
+    margin: 5px 0 5px 0;
+    text-align: center;
+  }
+
+  .lang_link {
+    display: initial;
+    padding: 3px 20px 3px 20px;
+  }
+
+  .menu__link {
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .menu__link--active {
+    color: #191821;
+  }
+
+  .slider {
+    height: 300px;
+  }
+
+  .container--slider {
+    display: block;
+  }
+
+  .slide__img_wrap {
+    height: 300px;
+  }
+
+  .benefit_info {
+    width: 100%;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+  }
+
+  .benefits_galary__row--second {
+    padding: 0;
+  }
+
+  .benefits_galary_item {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .benefits_modal {
+    width: 100%;
+  }
+
+  .benefits_modal__img {
+    display: none;
+  }
+
+  .benefits_modal__info h1 {
+    margin-top: 70px;
+  }
+
+  .benefits_modal__info {
+    float: none;
+    width: 100%;
+    padding: 0 10px 0 10px;
+  }
+
+  .benefits_modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0 0 0 0;
+  }
+
+  .apartments__topline {
+    padding: 0 5px 0 5px;
+  }
+
+  .choose_room {
+    margin: 20px 0 0 0;
+  }
+
+  .choose_room__btn--penthouse {
+    margin-top: 10px;
+  }
+
+  .apartments_info {
+    padding: 0 10px 0 10px;
+  }
+
+  .info__type-wrap {
+    margin-top: 20px;
+  }
+
+  .info__text {
+    margin-top: 50px;
+  }
+
+  .measurement {
+    width: 100%;
+    float: none;
+  }
+
+  .apartment_layout {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .apartment_layout img {
+    width: 300px;
+  }
+
+  .observation__link {
+    padding-top: 55px;
+  }
+
+  .observation__button {
+    float: none;
+    width: 100%;
+    height: 150px;
+  }
+
+  .developer {
+    background-image: none;
+  }
+
+  .developer__logo_wrap {
+    margin: 30px 0 0 0;
+  }
+
+  .developer__logo_wrap img {
+    width: 320px;
+    height: 100px;
+  }
+
+  .developer__info {
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .facebook {
+    display: none;
+  }
+
+  .contacts_block {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .contact {
+    float: none;
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .contact--email {
+    padding: 10px 0 0 10px;
+  }
+
+  .footer__form_wrap {
+    width: 100%;
+    float: none;
+    margin: 14px 0 0 0;
+  }
+
+  .form__title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .form__input {
+    width: 100%;
+  }
+
+  .form--sign_up {
+    width: 100%;
+  }
+
+  .form__title--sign_up {
+    text-align: left;
+    position: static;
+  }
+
+  .form--sign_up_close {
+    top: 0px;
+    right: 10px;
   }
 }
 
