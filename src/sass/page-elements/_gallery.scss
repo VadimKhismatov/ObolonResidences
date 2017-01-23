@@ -1,0 +1,36 @@
+/*galary start*/
+.gallery_modal{
+    display:none;
+    position: fixed;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+   background-color: #191821;
+    z-index: 1;
+}
+.gallery{
+     /*width: 100%;*/
+     overflow: hidden;
+}
+.gallery_item{
+    width: 1920px;
+    height: 1080px;
+    
+}
+.gallery_arrow{
+    position:absolute;
+    bottom: 84px;
+    background-repeat: no-repeat;
+    z-index: 1000;
+
+    &--prev{
+        @include s(gallery-arrow-prev);
+        left: 95px;
+    }
+    &--next{
+        @include s(gallery-arrow-next);
+        right: 95px;
+    }
+}
+/*galary end*/

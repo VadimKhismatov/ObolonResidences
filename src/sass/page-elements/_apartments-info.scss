@@ -21,6 +21,7 @@
     color: #a59864;
     letter-spacing: 0.7px;
     line-height: 1.3;
+    text-transform: uppercase;
 }
 
 .info__type-wrap{
@@ -37,6 +38,10 @@
     color: #b5b5b5;
 
     &--active{
+        color: #a59864;
+    }
+
+    &:hover{
         color: #a59864;
     }
 }
@@ -61,25 +66,37 @@
     overflow: hidden;
     margin: 46px 0 0 0;
     width: 228px;
-}
-.list{
+    table{
+    
     line-height: 1.2;
-}
-.list__item{
-    overflow: hidden;
-    margin-bottom: 0.5px;
+        tr{
+            overflow: hidden;
+            margin-bottom: 0.5px;
 
+            td{
+                @include helvetica-light;
+                font-size: em(12);
+                font-weight: bold;
+                color: #191821;
+                letter-spacing: 0.6px;
+            }
+            td:nth-child(2){
+                text-align: right;
+            }
+        }
+        
+        tfoot{
+            td{
+            @include helvetica-medium;
+            font-weight: 500;
+            color: #b8aa86;
+            padding: 20px 0 0 0;
+            }
+        }
+    }
 }
 
-.list__text{
-    float: left;
-    @include helvetica-light;
-    font-size: em(12);
-    font-weight: bold;
-    color: #191821;
-    letter-spacing: 0.6px;
-}
-.list__number{
+/*.list__number{
     float: right;
     @include helvetica-light;
     font-size: em(12);
@@ -87,15 +104,7 @@
     color: #191821;
     letter-spacing: 0.6px;
 
-}
-.list__total{
-    @include helvetica-medium;
-    font-weight: medium;
-    color: #b8aa86;
-}
-.list__item--total{
-    margin: 14px 0 0 0;
-}
+}*/
 /*measurements links start*/
 
 .measurement__links{
@@ -103,16 +112,16 @@
 
     @include helvetica-medium;
     font-size: em(14);
-    font-size: medium;
-    letter-spacing: -0.3px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
 }
 
 .measurement__links--pdf{
-    margin: 23px 0 0 1px;
+    margin: 24px 0 0 2px;
     color: #d50202;
 }
 .measurement__links--booklet{
-    margin: 11px 0 0 1px;
+    margin: 14px 0 0 2px;
     color: #191821;
 }
 
@@ -127,6 +136,64 @@
     text-align: center;
     padding: 34px 0 0 5px;
 }
+
+.flat{
+    overflow: hidden;
+}
+
+/*flat modal start*/
+
+.flat_modal{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+}
+.flat_modal__container{
+    width: 1300px;
+    overflow: hidden;
+    margin: 200px auto 0 auto;
+}
+.flat_modal__close{
+    @include s(modal-close);
+    position: absolute;
+    top: 61px;
+    right: 71px;
+}
+.flat_modal__layout{
+    float: left;
+}
+.flat_modal__info{
+    float: right;
+    margin: 86px 60px 0 0;
+}
+.info__title--flat_modal{
+    font-size: em(24);
+}
+.measurement--flat_modal{
+        width: 300px;
+    table{
+    
+    
+        tr{
+            
+
+            td{
+               
+                font-size: em(18);
+                
+            }
+        }
+}
+}
+.measurement__links--flat_modal{
+    font-size: em(18);
+}
+/*flat modal end*/
 
 /*apartment layout end*/
 /*apartments info end*/

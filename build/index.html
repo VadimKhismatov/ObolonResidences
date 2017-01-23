@@ -15,6 +15,13 @@
     <div class="out">
       <!--HEADER start-->
       <header class="header">
+        <form class="form mfp-hide form--sign_up" id="sign_up_for_viewing">
+          <h1 class="form__title form__title--sign_up">Записаться на просмотр <a href="#!" class="form--sign_up_close">Ñ</a></h1>
+          <p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите Имя"></p>
+          <p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите e-mail/телефон"></p>
+          <p class="form__input_wrap"><textarea class="form__input form__textarea" placeholder="Введите дату и время"></textarea>
+            <p> <input type="submit" class="form__submit" value="Отправить"></p>
+        </form>
         <!--LOGO start-->
         <div class="logo_wrap">
           <div class="logo"></div>
@@ -26,7 +33,7 @@
           <section class="top_contacts">
             <div class="contact_block">
               <p class="contact_tel">+38 (044) 498-26-26</p>
-              <p class="contact_appointment"><a href="#!" class="contact_appointment__link">Записаться на просмотр</a></p>
+              <p class="contact_appointment"><a href="#sign_up_for_viewing" class="contact_appointment__link">Записаться на просмотр</a></p>
             </div>
             <div class="lang_block"> <a href="#!" class="lang_link">рус</a> <a href="#!" class="lang_link">укр</a> <a href="#!" class="lang_link">eng</a> </div>
           </section>
@@ -57,36 +64,68 @@
           </section>
           <!--CONTAINER end-->
         </div>
-        <section class="slider">
-          <!--slide start-->
-          <div class="slide">
-            <div class="slide__img_wrap"> <img src="img/slider-img.jpg" alt="hall" class="slide__img"> </div>
-            <!--slide footer start-->
-            <div class="slide__footer">
-              <section class="container container--slider">
-                <div class="slide__icon"></div>
-                <div class="slide__info_block">
-                  <p class="slide__info"> Obolon Residences – жилой комплекс премиум класса, созданный по западным стандартам британским девелопером Dragon-Ukrainian Properties & Development. Комплекс находится в самом сердце Оболони, в нескольких шагах от станции метро «Минская».
-                    <br>Западный дизайн, роскошные интерьеры<br> лобби и этажей, отделка мрамором, </p>
-                </div>
-                <div class="slide__info_block">
-                  <p class="slide__info"> скоростные лифты – это лишь несколько отличительных черт комплекса. Квартиры с панорамными окнами и эффективными планировками и элитные пентхаусы удивят даже самых искушенных. Беспрецедентный комплекс услуг и эксклюзивная инфраструктура
-                    лучших резиденций мировых мегаполисов – для жителей Obolon Residences: </p>
-                </div>
-                <div class="slide__info_block">
-                  <p class="slide__info"> лаунж-зона на крыше с джакузи, спортзал, детская комната, конференц-зал, прачечная и пятизвездочный сервис. <br> <br> ЖК Obolon Residences – победитель престижной европейской премии European Property Awards 2014-2015 в категории «Высотные
-                    жилые здания». </p>
-                </div>
-              </section>
+        <section class="slider_wrap">
+          <div class="slider">
+            <!--slide start-->
+            <div class="slide">
+              <div class="slide__img_wrap"> <img src="img/slider-img.jpg" alt="hall" class="slide__img"> </div>
             </div>
-            <!--slide footer end-->
+            <!--slide end-->
+            <!--slide start-->
+            <div class="slide">
+              <div class="slide__img_wrap"> <img src="img/slider-img.jpg" alt="hall" class="slide__img"> </div>
+            </div>
+            <!--slide end-->
           </div>
-          <!--slide end-->
+          <!--slider footer start-->
+          <div class="slide__footer">
+            <section class="container container--slider">
+              <div class="slide__icon"></div>
+              <div class="slide__info_block">
+                <p class="slide__info"> Obolon Residences – жилой комплекс премиум класса, созданный по западным стандартам британским девелопером Dragon-Ukrainian Properties & Development. Комплекс находится в самом сердце Оболони, в нескольких шагах от станции метро «Минская».
+                  <br>Западный дизайн, роскошные интерьеры<br> лобби и этажей, отделка мрамором, </p>
+              </div>
+              <div class="slide__info_block">
+                <p class="slide__info"> скоростные лифты – это лишь несколько отличительных черт комплекса. Квартиры с панорамными окнами и эффективными планировками и элитные пентхаусы удивят даже самых искушенных. Беспрецедентный комплекс услуг и эксклюзивная инфраструктура
+                  лучших резиденций мировых мегаполисов – для жителей Obolon Residences: </p>
+              </div>
+              <div class="slide__info_block">
+                <p class="slide__info"> лаунж-зона на крыше с джакузи, спортзал, детская комната, конференц-зал, прачечная и пятизвездочный сервис. <br> <br> ЖК Obolon Residences – победитель престижной европейской премии European Property Awards 2014-2015 в категории «Высотные
+                  жилые здания». </p>
+              </div>
+            </section>
+          </div>
+          <!--slider footer end-->
         </section>
       </header>
       <!--HEADER end-->
       <!--BENEFITS block start-->
       <section class="benefits_block">
+        <div class="benefits_modal mfp-hide" id="benefits_modal_link">
+          <div class="benefits_modal__img"></div>
+          <div class="benefits_modal__info">
+            <div class="benefits_modal__top_line">
+              <h1 class="benefits_modal__title">НЕПОВТОРИМЫЙ СТИЛЬ ЖИЗНИ</h1>
+              <a href="#!" class="benefits_modal__close"></a>
+            </div>
+            <div class="benefits_modal__text_wrap">
+              <p> Самое главное для нас – обеспечить комфорт<br> и безопасность наших жителей. </p>
+              <p> Наши сотрудники на высоком профессиональном<br> уровне предоставят Вам следующие услуги: </p>
+              <ul>
+                <li> стирка и химчистка</li>
+                <li> услуги горничной</li>
+                <li> уход за детьми</li>
+                <li> ремонт обуви и одежды</li>
+                <li> транспортные услуги и аренда автомобиля с водителем</li>
+                <li> бронирование ресторанов</li>
+                <li> организация доставки</li>
+                <li> общие справочные услуги</li>
+              </ul>
+              <p> Сотрудники reception известят Вас о прибытии гостей и,<br> получив Ваше личное подтверждение, проводят их до лифта. </p>
+              <p> Круглосуточная охрана осуществляется высококвалифицированным<br> персоналом посредством системы видеонаблюдения, с уважением </p>
+            </div>
+          </div>
+        </div>
         <!--benefits info start-->
         <section class="benefits_block__info">
           <section class="container">
@@ -121,33 +160,33 @@
               <!--galary item start-->
               <div class="benefits_galary_item">
                 <div class="benefits_galary_item__img benefits_galary_item__img--concierge">
-                  <div class="benefits_galary_item__more_info"><a href="#!">подробнее</a></div>
+                  <div class="benefits_galary_item__more_info"><a href="#benefits_modal_link" class="benefits_modal_link">подробнее</a></div>
                 </div>
-                <div class="benefits_galary_item__title"><a href="#!" class="benefits_galary_item__title--link">Консьерж-сервис</a></div>
+                <div class="benefits_galary_item__title"><a href="#benefits_modal_link" class="benefits_galary_item__title--link benefits_modal_link">Консьерж-сервис</a></div>
               </div>
               <!--galary item end-->
               <!--galary item start-->
               <div class="benefits_galary_item">
                 <div class="benefits_galary_item__img benefits_galary_item__img--gym">
-                  <div class="benefits_galary_item__more_info"><a href="#!">подробнее</a></div>
+                  <div class="benefits_galary_item__more_info"><a href="#benefits_modal_link" class="benefits_modal_link">подробнее</a></div>
                 </div>
-                <div class="benefits_galary_item__title"><a href="#!" class="benefits_galary_item__title--link">Спортзал</a></div>
+                <div class="benefits_galary_item__title"><a href="#benefits_modal_link" class="benefits_galary_item__title--link benefits_modal_link">Спортзал</a></div>
               </div>
               <!--galary item end-->
               <!--galary item start-->
               <div class="benefits_galary_item">
                 <div class="benefits_galary_item__img benefits_galary_item__img--conference-room">
-                  <div class="benefits_galary_item__more_info"><a href="#!">подробнее</a></div>
+                  <div class="benefits_galary_item__more_info"><a href="#benefits_modal_link" class="benefits_modal_link">подробнее</a></div>
                 </div>
-                <div class="benefits_galary_item__title"><a href="#!" class="benefits_galary_item__title--link">Конференц-комната</a></div>
+                <div class="benefits_galary_item__title"><a href="#benefits_modal_link" class="benefits_galary_item__title--link benefits_modal_link">Конференц-комната</a></div>
               </div>
               <!--galary item end-->
               <!--galary item start-->
               <div class="benefits_galary_item">
                 <div class="benefits_galary_item__img benefits_galary_item__img--lounge-zone">
-                  <div class="benefits_galary_item__more_info"><a href="#!">подробнее</a></div>
+                  <div class="benefits_galary_item__more_info"><a href="#benefits_modal_link" class="benefits_modal_link">подробнее</a></div>
                 </div>
-                <div class="benefits_galary_item__title"><a href="#!" class="benefits_galary_item__title--link"> Лаунж зона<br> на крыше</a></div>
+                <div class="benefits_galary_item__title"><a href="#benefits_modal_link" class="benefits_galary_item__title--link benefits_modal_link"> Лаунж зона<br> на крыше</a></div>
               </div>
               <!--galary item end-->
             </div>
@@ -155,25 +194,25 @@
               <!--galary item start-->
               <div class="benefits_galary_item">
                 <div class="benefits_galary_item__img benefits_galary_item__img--childs-room">
-                  <div class="benefits_galary_item__more_info"><a href="#!">подробнее</a></div>
+                  <div class="benefits_galary_item__more_info"><a href="#benefits_modal_link" class="benefits_modal_link">подробнее</a></div>
                 </div>
-                <div class="benefits_galary_item__title"><a href="#!" class="benefits_galary_item__title--link"> Детская комната</a></div>
+                <div class="benefits_galary_item__title"><a href="#benefits_modal_link" class="benefits_galary_item__title--link benefits_modal_link"> Детская комната</a></div>
               </div>
               <!--galary item end-->
               <!--galary item start-->
               <div class="benefits_galary_item">
                 <div class="benefits_galary_item__img benefits_galary_item__img--laundry">
-                  <div class="benefits_galary_item__more_info"><a href="#!">подробнее</a></div>
+                  <div class="benefits_galary_item__more_info"><a href="#benefits_modal_link" class="benefits_modal_link">подробнее</a></div>
                 </div>
-                <div class="benefits_galary_item__title"><a href="#!" class="benefits_galary_item__title--link"> Прачечная</a></div>
+                <div class="benefits_galary_item__title"><a href="#benefits_modal_link" class="benefits_galary_item__title--link benefits_modal_link"> Прачечная</a></div>
               </div>
               <!--galary item end-->
               <!--galary item start-->
               <div class="benefits_galary_item">
                 <div class="benefits_galary_item__img benefits_galary_item__img--designe-studio">
-                  <div class="benefits_galary_item__more_info"><a href="#!">подробнее</a></div>
+                  <div class="benefits_galary_item__more_info"><a href="#benefits_modal_link" class="benefits_modal_link">подробнее</a></div>
                 </div>
-                <div class="benefits_galary_item__title"><a href="#!" class="benefits_galary_item__title--link">  Студия дизайна</a></div>
+                <div class="benefits_galary_item__title"><a href="#benefits_modal_link" class="benefits_galary_item__title--link benefits_modal_link">  Студия дизайна</a></div>
               </div>
               <!--galary item end-->
             </div>
@@ -194,102 +233,2892 @@
             <!--choose secction start-->
             <div class="choose_section">
               <p class="apartments__topline__title">1. Выберите секцию</p>
-              <div class="apartments__topline__wrap">
-                <div class="choose_section__btn choose_section__btn--first">Секция 1</div>
-                <div class="choose_section__btn choose_section__btn--second apartments-active">Секция 2</div>
+              <div class="apartments__topline__sections">
+                <div class="choose_section__btn choose_section__btn--a">Секция 1</div>
+                <div class="choose_section__btn choose_section__btn--b">Секция 2</div>
               </div>
             </div>
             <!--choose secction end-->
-            <!--choose room start-->
-            <div class="choose_room">
+            <!--choose room section-a start-->
+            <div class="choose_room choose_room--section-a">
               <p class="apartments__topline__title">2. Выберите кол-во комнат</p>
-              <div class="apartments__topline__wrap">
-                <div class="choose_room__btn">1</div>
-                <div class="choose_room__btn">2</div>
-                <div class="choose_room__btn">3</div>
-                <div class="choose_room__btn apartments-active">4</div>
-                <div class="choose_room__btn choose_room__btn--penthouse">Пентхаус</div>
+              <div class="apartments__topline__rooms">
+                <div class="choose_room__btn choose__btn--section-a" data-room="room1">1</div>
+                <div class="choose_room__btn choose__btn--section-a" data-room="room2">2</div>
+                <div class="choose_room__btn choose__btn--section-a" data-room="room3">3</div>
+                <div class="choose_room__btn choose_room__btn--penthouse  choose__penthouse--section-a" data-room="penthouse">Пентхаус</div>
               </div>
             </div>
+            <!--choose room section-a end-->
+            <!--choose room section-b start-->
+            <div class="choose_room choose_room--section-b">
+              <p class="apartments__topline__title">2. Выберите кол-во комнат</p>
+              <div class="apartments__topline__rooms">
+                <div class="choose_room__btn choose__btn--section-b" data-room="room1">1</div>
+                <div class="choose_room__btn choose__btn--section-b" data-room="room2">2</div>
+                <div class="choose_room__btn choose__btn--section-b" data-room="room3">3</div>
+                <div class="choose_room__btn choose__btn--section-b" data-room="room4">4</div>
+                <div class="choose_room__btn choose_room__btn--penthouse  choose__penthouse--section-b" data-room="penthouse">Пентхаус</div>
+              </div>
+            </div>
+            <!--choose room section-b end-->
             <!--choose room end-->
           </section>
           <!--apartments topline end-->
           <!--apartments info block start-->
           <!--apartments info start-->
-          <section class="apartments_info">
-            <!--info start-->
-            <section class="info">
-              <h1 class="info__title">СЕКЦИЯ 2 <br> 4-КОМНАТНАЯ</h1>
-              <div class="info__type-wrap"> <a href="#!" class="info__type info__type--active">Тип1</a> <a href="#!" class="info__type">Тип П1</a> </div>
-              <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
-            </section>
-            <!--info end-->
-            <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="scheme-room"> </section>
-            <!--measurement start-->
-            <section class="measurement">
-              <ul class="list">
-                <li class="list__item">
-                  <p class="list__text">01. Холл</p>
-                  <p class="list__number">9,33 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">02. Кухня / Гостиная</p>
-                  <p class="list__number">42,33 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">03. Спальня</p>
-                  <p class="list__number">15,54 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">04. Спальня</p>
-                  <p class="list__number">16,06 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">05. Ванная </p>
-                  <p class="list__number">3,77 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">06. Спальня</p>
-                  <p class="list__number">19,37 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">07. Спальня</p>
-                  <p class="list__number">26,18 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">08. Ванная </p>
-                  <p class="list__number">5,44 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">09. Санузел</p>
-                  <p class="list__number">2,62 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">10. Кладовая</p>
-                  <p class="list__number">4,41 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">11. Коридор</p>
-                  <p class="list__number">5,38 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">12. Балкон</p>
-                  <p class="list__number">0,76 кв.м</p>
-                </li>
-                <li class="list__item">
-                  <p class="list__text">13. Балкон</p>
-                  <p class="list__number">0,79 кв.м</p>
-                </li>
-                <li class="list__item list__item--total">
-                  <p class="list__text list__total">Общая площадь</p>
-                  <p class="list__number list__total">151,98 кв.м</p>
-                </li>
-              </ul>
-              <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
-              <!--measurements links end-->
-            </section>
-            <!--measurement end-->
+          <!--apartments_info section-a start-->
+          <section class="apartments_info apartments_info--section-a">
+            <!--room1 start-->
+            <div class=" room room1">
+              <div class="flat flat_section_1_type1">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-1-room-1-type1"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 1</span> <br> <span class="info__title--rooms">1-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 1</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 1</span><br> <span class="info__title--rooms">1-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type info__type--active" data-type="type1">Тип1</a> <a href="#!" class="info__type" data-type="type1p">Тип П1</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 1. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-1-type1"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+              <div class="flat flat_section_1_type1p">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-1-type1p"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 1</span> <br> <span class="info__title--rooms">1-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип П1</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 1</span><br> <span class="info__title--rooms">1-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Тип1</a> <a href="#!" class="info__type info__type--active" data-type="type1p">Тип П1</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 1. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-1-type1p"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+            </div>
+            <!--room1 end-->
+            <!--room2 start-->
+            <div class=" room room2">
+              <div class="flat flat_section_1_type1">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-1-room-2-type1"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 1</span> <br> <span class="info__title--rooms">2-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 2</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 1</span><br> <span class="info__title--rooms">2-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type info__type--active" data-type="type1">Тип2</a> <a href="#!" class="info__type" data-type="type1p">Тип П2</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 1. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-2-type1"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+              <div class="flat flat_section_1_type1p">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-1-room-2-type1p"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 1</span> <br> <span class="info__title--rooms">2-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип П2</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 1</span><br> <span class="info__title--rooms">2-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Тип2</a> <a href="#!" class="info__type info__type--active" data-type="type1p">Тип П2</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 1. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-1-type1"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+            </div>
+            <!--room2 end-->
+            <!--room3 start-->
+            <div class=" room room3">
+              <div class="flat flat_section_1_type1">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-1-room-3-type1"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 1</span> <br> <span class="info__title--rooms">3-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 3</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 1</span><br> <span class="info__title--rooms">3-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type info__type--active" data-type="type1">Тип3</a> <a href="#!" class="info__type" data-type="type1p">Тип П3</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 1. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-2-type3"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+              <div class="flat flat_section_1_type1p">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-3-type3p"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 1</span> <br> <span class="info__title--rooms">3-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип П3</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 1</span><br> <span class="info__title--rooms">3-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Тип3</a> <a href="#!" class="info__type info__type--active" data-type="type1p">Тип П3</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 1. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-1-type3"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+            </div>
+            <!--room3 end-->
+            <!--penthouse start-->
+            <div class=" room penthouse">
+              <div class="flat flat_section_1_type1">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-penthouse-penthouse1"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 1</span> <br> <span class="info__title--rooms">Пентхаус</span> <br> <span class="info__title--rooms">Пентхаус 1</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 1</span><br> <span class="info__title--rooms">пентхаус</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type info__type--active" data-type="type1">Пентхаус4</a> <a href="#!" class="info__type" data-type="type1p">Пентхаус П4</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 1. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-2-penthouse"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+              <div class="flat flat_section_1_type1p">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-penthouse-penthouse1p"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 1</span> <br> <span class="info__title--rooms">Пентхаус</span> <br> <span class="info__title--rooms">Пентхаус П1</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 1</span><br> <span class="info__title--rooms">пентхаус</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Пентхаус4</a> <a href="#!" class="info__type info__type--active" data-type="type1p">Пентхаус П4</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 1. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-1-penthouse"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+            </div>
+            <!--penthouse end-->
           </section>
+          <!--apartments_info section-a end-->
+          <!--apartments_info section-b start-->
+          <section class="apartments_info apartments_info--section-b">
+            <!--room1 start-->
+            <div class=" room room1">
+              <div class="flat flat_section_1_type1">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-1-type1"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">1-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 1</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">1-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type info__type--active" data-type="type1">Тип1</a> <a href="#!" class="info__type" data-type="type1p">Тип П1</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-2-room-1-type1"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+              <div class="flat flat_section_1_type1p">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-1-type1p"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">1-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип П1</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">1-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Тип1</a> <a href="#!" class="info__type info__type--active" data-type="type1p">Тип П1</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-2-room-1-type1"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+            </div>
+            <!--room1 end-->
+            <!--room2 start-->
+            <div class=" room room2">
+              <div class="flat flat_section_1_type1">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-2-type2"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">2-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 2</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">2-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type info__type--active" data-type="type1">Тип2</a> <a href="#!" class="info__type" data-type="type1p">Тип П2</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-2-room-2-type2"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+              <div class="flat flat_section_1_type1p">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-2-type2p"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">2-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 2П</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">2-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Тип2</a> <a href="#!" class="info__type info__type--active" data-type="type1p">Тип П2</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-2-room-2-type2"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+            </div>
+            <!--room2 end-->
+            <!--room3 start-->
+            <div class=" room room3">
+              <div class="flat flat_section_1_type1">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-3-type3"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">3-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 3</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">3-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type info__type--active" data-type="type1">Тип3</a> <a href="#!" class="info__type" data-type="type1p">Тип П3</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-2-room-3-type3"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+              <div class="flat flat_section_1_type1p">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-3-type3p"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">3-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 3П</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">3-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Тип3</a> <a href="#!" class="info__type info__type--active" data-type="type1p">Тип П3</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-2-room-3-type3"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+            </div>
+            <!--room3 end-->
+            <!--room4 start-->
+            <div class=" room room4">
+              <div class="flat flat_section_1_type1">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-4-type4"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">4-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 4</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">4-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type info__type--active" data-type="type1">Тип4</a> <a href="#!" class="info__type" data-type="type1p">Тип П4</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-4-type4"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+              <div class="flat flat_section_1_type1p">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-room-4-type4p"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">4-КОМНАТНАЯ</span> <br> <span class="info__title--rooms">Тип 4П</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">4-КОМНАТНАЯ</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Тип4</a> <a href="#!" class="info__type info__type--active" data-type="type1p">Тип П4</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-1-room-4-type4"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+            </div>
+            <!--room4 end-->
+            <!--penthouse start-->
+            <div class=" room penthouse">
+              <div class="flat flat_section_1_type1">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-penthouse-penthouse1"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">Пентхаус</span> <br> <span class="info__title--rooms">Пентхаус1</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">пентхаус</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type info__type--active" data-type="type1">Пентхаус1</a> <a href="#!" class="info__type" data-type="type1p">Пентхаус П1</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-2-room-3-penthouse"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+              <div class="flat flat_section_1_type1p">
+                <!--flat modal start-->
+                <section class="flat_modal">
+                  <section class="flat_modal__container">
+                    <section class="flat_modal__layout"> <img src="../img/scheme-room-modal.jpg" alt="section-2-penthouse-penthouse1p"> </section>
+                    <section class="flat_modal__info">
+                      <h1 class="info__title info__title--flat_modal"> <span class="info__title--section">СЕКЦИЯ 2</span> <br> <span class="info__title--rooms">Пентхаус</span> <br> <span class="info__title--rooms">Пентхаус 1П</span> </h1>
+                      <section class="measurement measurement--flat_modal">
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>01. Холл</td>
+                              <td>9,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>02. Кухня / Гостиная</td>
+                              <td>42,33 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>03. Спальня</td>
+                              <td>15,54 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>04. Спальня</td>
+                              <td>16,06 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>05. Ванная </td>
+                              <td>3,77 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>06. Спальня</td>
+                              <td>19,37 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>07. Спальня</td>
+                              <td>26,18 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>08. Ванная </td>
+                              <td>5,44 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>09. Санузел</td>
+                              <td>2,62 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>10. Кладовая</td>
+                              <td>4,41 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>11. Коридор</td>
+                              <td>5,38 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>12. Балкон</td>
+                              <td>0,76 кв.м</td>
+                            </tr>
+                            <tr>
+                              <td>13. Балкон</td>
+                              <td>0,79 кв.м</td>
+                            </tr>
+                          </tbody>
+                          <tfoot>
+                            <tr>
+                              <td>Общая площадь</td>
+                              <td>151,98 кв.м</td>
+                            </tr>
+                          </tfoot>
+                        </table>
+                        <!--measurements links start--><a href="#!" class="measurement__links measurement__links--flat_modal measurement__links--pdf">Подробнее (скачать PDF)</a>
+                        <!--measurements links end-->
+                      </section>
+                      <!--measurement end-->
+                    </section>
+                  </section>
+                  <a href="#!" class="flat_modal__close"></a>
+                </section>
+                <!--flat modal end-->
+                <!--info start-->
+                <section class="info">
+                  <h1 class="info__title"><span class="info__title--section">СЕКЦИЯ 2</span><br> <span class="info__title--rooms">пентхаус</span></h1>
+                  <div class="info__type-wrap info__type-wrap-room1"> <a href="#!" class="info__type" data-type="type1">Пентхаус1</a> <a href="#!" class="info__type info__type--active" data-type="type1p">Пентхаус П1</a> </div>
+                  <p class="info__text">Квартира расположена на 3-8 и 19-21 этажах Секции 2. Окна выходят на запад, юг и восток.</p>
+                </section>
+                <!--info end-->
+                <section class="apartment_layout"> <img src="../img/scheme-room.jpg" alt="section-2-room-3-penthouse"> </section>
+                <!--measurement start-->
+                <section class="measurement">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>01. Холл</td>
+                        <td>9,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>02. Кухня / Гостиная</td>
+                        <td>42,33 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>03. Спальня</td>
+                        <td>15,54 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>04. Спальня</td>
+                        <td>16,06 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>05. Ванная </td>
+                        <td>3,77 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>06. Спальня</td>
+                        <td>19,37 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>07. Спальня</td>
+                        <td>26,18 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>08. Ванная </td>
+                        <td>5,44 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>09. Санузел</td>
+                        <td>2,62 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>10. Кладовая</td>
+                        <td>4,41 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>11. Коридор</td>
+                        <td>5,38 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>12. Балкон</td>
+                        <td>0,76 кв.м</td>
+                      </tr>
+                      <tr>
+                        <td>13. Балкон</td>
+                        <td>0,79 кв.м</td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td>Общая площадь</td>
+                        <td>151,98 кв.м</td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                  <!--measurements links start--><a href="#!" class="measurement__links measurement__links--pdf">Подробнее (скачать PDF)</a> <a href="#!" class="measurement__links measurement__links--booklet">Получить брошюру</a>
+                  <!--measurements links end-->
+                </section>
+                <!--measurement end-->
+              </div>
+            </div>
+            <!--penthouse end-->
+          </section>
+          <!--apartments_info section-b end-->
           <!--apartments info end-->
           <!--apartments info block end-->
         </section>
@@ -297,9 +3126,27 @@
       <!--apartments end-->
       <!--observation start-->
       <section class="observation">
+        <!--observation web camera modal start-->
+        <div class="observation__modal observation__modal--webcam mfp-hide" id="webcam"> <img src="http://31.43.111.146/video2.mjpg" />
+          <a href="#!" class="observation__modal__close webcam_close"></a>
+        </div>
+        <!--observation web camera modal end-->
+        <!--observation galary modal start-->
+        <div class="gallery_modal" id="gallery">
+          <div class="gallery">
+            <div class="gallery-slider">
+              <div class="gallery_item"> <img src="../img/gallery-img.jpg" alt=""> </div>
+              <div class="gallery_item"> <img src="../img/gallery-img.jpg" alt=""> </div>
+            </div>
+          </div>
+          <a href="#!" class="observation__modal__close gallery_close"></a>
+          <a href="#!" class="gallery_arrow gallery_arrow--prev"></a>
+          <a href="#!" class="gallery_arrow gallery_arrow--next"></a>
+        </div>
+        <!--observation galary modal end-->
         <!--web-camera start-->
         <section class="observation__button web_camera">
-          <a href="#!" class="observation__link">
+          <a href="#webcam" class="observation__link webcam">
             <h1 class="observation__title">веб-камера</h1>
             <p class="observation__text">Ход строительства в реальном времени</p>
           </a>
@@ -307,7 +3154,7 @@
         <!--web-camera end-->
         <!--observation galary start-->
         <section class="observation__button observation_gallery">
-          <a href="#!" class="observation__link">
+          <a href="#!" class="observation__link gallery">
             <h1 class="observation__title">галерея</h1>
             <p class="observation__text">Фотографии интерьра и экстерьера</p>
           </a>
@@ -388,12 +3235,12 @@
           <!--footer contacts end-->
           <!--footer form start-->
           <section class="footer__form_wrap">
-            <form class="question_form">
-              <h1 class="question_form__title">Задать Вопрос</h1>
-              <p class="question_form__input_wrap"><input type="text" class="question_form__input" placeholder="Введите Имя"></p>
-              <p class="question_form__input_wrap"><input type="text" class="question_form__input" placeholder="Введите e-mail/телефон"></p>
-              <p class="question_form__input_wrap"><textarea class="question_form__input question_form__textarea" placeholder="Введите коментарий"></textarea>
-                <p> <input type="submit" class="question_form__submit" value="Отправить"></p>
+            <form class="form">
+              <h1 class="form__title">Задать Вопрос</h1>
+              <p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите Имя"></p>
+              <p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите e-mail/телефон"></p>
+              <p class="form__input_wrap"><textarea class="form__input form__textarea" placeholder="Введите коментарий"></textarea>
+                <p> <input type="submit" class="form__submit" value="Отправить"></p>
             </form>
           </section>
           <!--footer form end-->
@@ -404,7 +3251,7 @@
     <!-- END content -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlgAx5uM4UtPMSzDaVToeNGqe9uNZqRP4&sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlgAx5uM4UtPMSzDaVToeNGqe9uNZqRP4"></script>
     <!-- END scripts -->
   </body>
 

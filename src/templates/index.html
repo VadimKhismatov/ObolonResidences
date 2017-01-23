@@ -2,6 +2,13 @@
 
 <!--HEADER start-->
 <header class="header">
+	<form class="form mfp-hide form--sign_up" id="sign_up_for_viewing">
+		<h1 class="form__title form__title--sign_up">Записаться на просмотр <a href="#!" class="form--sign_up_close">Ñ</a></h1>
+		<p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите Имя"></p>
+		<p class="form__input_wrap"><input type="text" class="form__input" placeholder="Введите e-mail/телефон"></p>
+		<p class="form__input_wrap"><textarea class="form__input form__textarea" placeholder="Введите дату и время"></textarea>
+			<p> <input type="submit" class="form__submit" value="Отправить"></p>
+	</form>
 	<!--LOGO start-->
 	<div class="logo_wrap">
 		<div class="logo"></div>
@@ -30,8 +37,46 @@
 
 	</div>
 
-	<section class="slider">
-		{% include "partials/_slider.html"%}
+	<section class="slider_wrap">
+		<div class="slider">
+			{% include "partials/_slider.html"%}
+
+		</div>
+		<!--slider footer start-->
+		<div class="slide__footer">
+
+			<section class="container container--slider">
+				<div class="slide__icon"></div>
+
+				<div class="slide__info_block">
+					<p class="slide__info">
+						Obolon Residences – жилой комплекс премиум класса, созданный по западным стандартам британским девелопером Dragon-Ukrainian
+						Properties & Development. Комплекс находится в самом сердце Оболони, в нескольких шагах от станции метро «Минская».
+						<br>Западный дизайн, роскошные интерьеры<br> лобби и этажей, отделка мрамором,
+					</p>
+				</div>
+
+				<div class="slide__info_block">
+					<p class="slide__info">
+						скоростные лифты – это лишь несколько отличительных черт комплекса. Квартиры с панорамными окнами и эффективными планировками
+						и элитные пентхаусы удивят даже самых искушенных. Беспрецедентный комплекс услуг и эксклюзивная инфраструктура лучших
+						резиденций мировых мегаполисов – для жителей Obolon Residences:
+					</p>
+				</div>
+
+				<div class="slide__info_block">
+					<p class="slide__info">
+						лаунж-зона на крыше с джакузи, спортзал, детская комната, конференц-зал, прачечная и пятизвездочный сервис.
+						<br>
+						<br> ЖК Obolon Residences – победитель престижной европейской премии European Property Awards 2014-2015 в категории
+						«Высотные жилые здания».
+					</p>
+				</div>
+
+			</section>
+
+		</div>
+		<!--slider footer end-->
 	</section>
 
 </header>
@@ -39,6 +84,11 @@
 
 <!--BENEFITS block start-->
 <section class="benefits_block">
+
+	<div class="benefits_modal mfp-hide" id="benefits_modal_link">
+		{% include "partials/_concierge-modal.html"%}
+	</div>
+
 	<!--benefits info start-->
 	<section class="benefits_block__info">
 		<section class="container">
@@ -83,6 +133,25 @@
 <!--observation start-->
 
 <section class="observation">
+	<!--observation web camera modal start-->
+	<div class="observation__modal observation__modal--webcam mfp-hide" id="webcam">
+		<img src="http://31.43.111.146/video2.mjpg" />
+		<a href="#!" class="observation__modal__close webcam_close"></a>
+	</div>
+	<!--observation web camera modal end-->
+
+	<!--observation galary modal start-->
+	<div class="gallery_modal" id="gallery">
+		{% include "partials/_galary.html" %}
+		<a href="#!" class="observation__modal__close gallery_close"></a>
+		<a href="#!" class="gallery_arrow gallery_arrow--prev"></a>
+		<a href="#!" class="gallery_arrow gallery_arrow--next"></a>
+		
+		
+	</div>
+	<!--observation galary modal end-->
+
+
 	{% include "partials/_observation.html" %}
 </section>
 

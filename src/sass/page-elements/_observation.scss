@@ -59,4 +59,22 @@
     background-image: url("../img/gallery.jpg");
 }
 
+/*webcam modal start*/
+.observation__modal--webcam{
+    position: relative;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+}
+
+.observation__modal__close{
+    position: absolute;
+    top:20px;
+    right:17px;
+    @include s(close-btn);
+    z-index: 1000;
+}
+/*webcam modal end*/
+
+
 /*observation end*/
