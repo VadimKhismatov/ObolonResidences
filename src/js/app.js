@@ -10,7 +10,7 @@
 sayHello();
 $(document).ready(function () {
     mobileMenu();
-    mainSlider();
+    /*mainSlider();*/
     formModal();
     benefitsModal();
     apartments();
@@ -55,7 +55,7 @@ function initMap() {
         scrollwheel: false
     };
 
-    if ($(window).width() <= 320) {
+    if ($(window).width() <= 480) {
         mapOptions.zoom = 15;
     }
 

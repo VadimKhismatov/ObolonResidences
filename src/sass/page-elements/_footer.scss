@@ -7,7 +7,7 @@
     float: left;
     margin: 73px 0 0 40px;
     width: 307px;
-    @include r(320){
+    @include r(1023){
         display: none;
     }
 }
@@ -17,6 +17,16 @@
     width: 654px;
     margin: 67px 40px 0 0;
     @include r(320){
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    @include r(480){
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    @include r(568){
         float: none;
         width: 100%;
         margin-right: 0;
@@ -35,11 +45,27 @@
         width: 100%;
         padding-left: 10px;
     }
+    @include r(480){
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+    }
+    @include r(568){
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+    }
 }
 
 .contact--email{
     padding: 36px 0 0 6px;
     @include r(320){
+        padding: 10px 0 0 10px;
+    }
+    @include r(480){
+        padding: 10px 0 0 10px;
+    }
+    @include r(568){
         padding: 10px 0 0 10px;
     }
 }
@@ -92,6 +118,17 @@
     background-color: #a59864;
 
     @include r(320){
+        width: 100%;
+        float: none;
+        margin: 14px 0 0 0;
+    }
+    
+    @include r(480){
+        width: 100%;
+        float: none;
+        margin: 14px 0 0 0;
+    }
+    @include r(568){
         width: 100%;
         float: none;
         margin: 14px 0 0 0;

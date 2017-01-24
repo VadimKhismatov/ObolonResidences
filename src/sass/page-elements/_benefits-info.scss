@@ -22,10 +22,20 @@
          }
     }
 
-    @include r(320){
+    /*@include r(320){
         width: 100%;
         margin: 0;
-        padding: 10px 10px 0 10px; 
+        padding: 5px 10px 5px 10px;
+    }*/
+    @include r(480){
+        width: 100%;
+        margin: 0;
+        padding: 5px 10px 5px 10px;
+    }
+    @include r(568){
+        width: 100%;
+        margin: 0;
+        padding: 5px 10px 5px 10px;
     }
 }
 /*benefits info end*/
@@ -42,12 +52,27 @@
 .benefits_galary__row--second{
     overflow: hidden;
     padding: 0 40px 0 134px;
-    @include r(320){
-        padding: 0;
-    }
 
     & > .benefits_galary_item{
+        margin-top: 4px;
+    }
+    /*@include r(320){
+        padding: 0 0 0 0;
+        & > .benefits_galary_item{
         margin-top: 70px;
+        }
+    }*/
+    @include r(480){
+        padding: 0 0 0 0;
+        & > .benefits_galary_item{
+        margin-top: 70px;
+        }
+    }
+    @include r(568){
+        padding: 0 0 0 0;
+        & > .benefits_galary_item{
+        margin-top: 70px;
+        }
     }
     
 }
@@ -62,10 +87,20 @@
     font-size: em(18);
     font-weight: bold;
 
-    @include r(320){
+    @include rmin(300){
         float: none;
         margin-left: auto;
         margin-right: auto;
+    }
+    @include rmin(480){
+        float: left;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @include rmin(568){
+        float: left;
+        margin-left: 42px;
+        margin-right: 42px;
     }
 }
 
@@ -126,7 +161,11 @@
     background-color: #fff;
     overflow: hidden;
     color: #191821;
-    @include r(320){
+    
+    /*@include r(320){
+        width: 100%;
+    }*/
+    @include r(480){
         width: 100%;
     }
 }
@@ -138,7 +177,10 @@
     background-size: cover;
     width: 333px;
     height: 500px;
-    @include r(320){
+    /*@include r(320){
+        display: none;
+    }*/
+    @include r(480){
         display: none;
     }
 }
@@ -155,7 +197,10 @@
         font-weight: 100;
         text-transform: uppercase;
         letter-spacing: 0.7px;
-        @include r(320){
+        /*@include r(320){
+            margin-top: 70px;
+        }*/
+        @include r(480){
             margin-top: 70px;
         }
     }
@@ -167,7 +212,13 @@
             margin: 0 0 5px 15px;
     }
 
-    @include r(320){
+    /*@include r(320){
+        float: none;
+        width: 100%;
+        padding: 0 10px 0 10px;
+    }*/
+    
+    @include r(480){
         float: none;
         width: 100%;
         padding: 0 10px 0 10px;
@@ -183,7 +234,14 @@
     margin: 32px 35px 0 0;
     @include s(modal-close);
 
-    @include r(320){
+   /* @include r(320){
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        margin: 0 0 0 0;
+    }*/
+    
+    @include r(480){
         position: absolute;
         top: 10px;
         right: 10px;

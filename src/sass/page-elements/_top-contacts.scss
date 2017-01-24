@@ -2,7 +2,11 @@
 
 .top_contacts{
     float: right;
-    @include r(320){
+    @include r(480){
+        float: none;
+        overflow: hidden;
+    }
+    @include r(568){
         float: none;
         overflow: hidden;
     }
@@ -11,7 +15,15 @@
 .contact_block{
     float: left;
     margin: 0 11px 0 0;
-    @include r(320){
+    /*@include r(320){
+        float: none;
+        margin: 0 0 0 0;
+    }*/
+    @include r(480){
+        float: none;
+        margin: 0 0 0 0;
+    }
+    @include r(568){
         float: none;
         margin: 0 0 0 0;
     }
@@ -30,7 +42,13 @@
     font-size: em(14);
     background-color: #901313;
 
-    @include r(320){
+    /*@include r(320){
+        text-align: center;
+    }*/
+    @include r(480){
+        text-align: center;
+    }
+    @include r(568){
         text-align: center;
     }
 }
@@ -45,7 +63,17 @@
 .lang_block{
     float: right;
     margin: 25px 0 0 0;
-    @include r(320){
+    /*@include r(320){
+        float: none;
+        margin: 5px 0 5px 0;
+        text-align: center;
+    }*/
+    @include r(480){
+        float: none;
+        margin: 5px 0 5px 0;
+        text-align: center;
+    }
+    @include r(568){
         float: none;
         margin: 5px 0 5px 0;
         text-align: center;
@@ -63,7 +91,15 @@
             text-decoration: underline;
         }
 
-        @include r(320){
+        /*@include r(320){
+            display: initial;
+            padding: 3px 20px 3px 20px;
+        }*/
+        @include r(480){
+            display: initial;
+            padding: 3px 20px 3px 20px;
+        }
+        @include r(568){
             display: initial;
             padding: 3px 20px 3px 20px;
         }

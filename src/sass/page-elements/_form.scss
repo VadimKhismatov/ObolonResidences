@@ -69,12 +69,20 @@
     @include r(320){
         width: 100%;
     }
+    @include r(480){
+        width: 100%;
+        position:relative;
+    }
 }
 
 .form__title--sign_up{
     font-size: em(18);
     position: relative;
     @include r(320){
+        text-align: left;
+        position: static;
+    }
+    @include r(480){
         text-align: left;
         position: static;
     }
@@ -94,6 +102,10 @@
         color: #fff;
         text-decoration: none;
         @include r(320){
+            top:0px;
+            right: 10px;
+        }
+        @include r(480){
             top:0px;
             right: 10px;
         }

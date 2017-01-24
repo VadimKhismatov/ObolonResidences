@@ -2,15 +2,27 @@
 .slider{
     height: 729px;
     overflow: hidden;
-    @include r(320){
+    @include r(400){
         height: 300px;
+    }
+    @include r(480){
+        height: 320px;
+    }
+    @include r(568){
+        height: 380px;
     }
 }
 .container--slider{
     overflow: visible;
     display: flex;
     position: relative;
-    @include r(320){
+    /*@include r(320){
+        display: block;
+    }
+    @include r(480){
+        display: block;
+    }*/
+    @include r(568){
         display: block;
     }
 }
@@ -18,8 +30,14 @@
     width: 100%;
     overflow: hidden;
     height: 729px;
-    @include r(320){
+    @include r(400){
         height: 300px;
+    }
+    @include r(480){
+        height: 320px;
+    }
+    @include r(568){
+        height: 380px;
     }
 }
 .slide__img{
@@ -38,14 +56,47 @@
         @include s(award-hover);
     }
     width: 117px;
+    /*@include r(320){
+        position: static;
+        float: left;
+        clear: right;
+        margin: 5px 3px 0 1px;
+    }*/
+    @include r(480){
+        position: static;
+        float: left;
+        clear: right;
+        margin: 5px 3px 0 1px;
+    }
+    @include r(568){
+        position: static;
+        float: left;
+        clear: right;
+        margin: 5px 3px 0 1px;
+    }
 }
 
 /*slider footer start*/
 
 .slide__info_block{
-    width: 300px;
-    margin: 0 10px 0 10px;
-    padding: 5px 0 5px 0;
+    width: 307px;
+    margin: 0 0 0 40px;
+    padding: 31px 0 33px 0;
+    /*@include r(320){
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 5px 10px 5px 10px;
+    }*/
+    @include r(480){
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 5px 10px 5px 10px;
+    }
+    @include r(568){
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 5px 10px 5px 10px;
+    }
 }
 
 .slide__info{
