@@ -52,7 +52,7 @@
     &--active{
     color: #191821;
 }
-    @include r(568){
+    @include r(768){
         color:#fff;
         font-weight: 300;
         &--active{

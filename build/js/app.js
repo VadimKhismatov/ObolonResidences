@@ -4885,12 +4885,12 @@ function apartments() {
 sayHello();
 $(document).ready(function () {
 	mobileMenu();
-	/*mainSlider();*/
+	mainSlider();
 	formModal();
 	benefitsModal();
 	apartments();
 	webcam();
-	galary();
+	gallery();
 	initMap();
 });
 
@@ -4986,21 +4986,15 @@ function webcam() {
 	});
 };
 
-function galary() {
-	var $galleryMdl = $(".gallery_modal");
-
-	$(".gallery").on("click", function (e) {
-		e.preventDefault();
-		gallerySlider();
-		OffScroll();
-		$galleryMdl.css("display", "block");
+function gallery() {
+	$(".gallery-open").magnificPopup({
+		type: 'inline',
+		modal: true
 	});
-
-	$(".gallery_close").on("click", function (e) {
+	gallerySlider();
+	$(".gallery_close").on('click', function (e) {
 		e.preventDefault();
-		$galleryMdl.css("display", "none");
-		$(".gallery-slider").slick('unslick');
-		$(window).unbind("scroll");
+		$.magnificPopup.close();
 	});
 };
 
@@ -5022,13 +5016,20 @@ function mainSlider() {
 
 function gallerySlider() {
 
-	$(".gallery-slider").slick({
+	$(".slider-gallery").slick({
 		infinity: true,
 		arrows: true,
 		prevArrow: $(".gallery_arrow--prev"),
 		nextArrow: $(".gallery_arrow--next"),
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		speed: 1000
+		responsive: [{
+			breakpoint: 768,
+			arrows: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: false,
+			nextArrow: false
+		}]
 	});
 }

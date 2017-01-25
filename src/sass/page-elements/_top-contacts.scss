@@ -2,31 +2,50 @@
 
 .top_contacts{
     float: right;
-    @include r(480){
+    @include r(768){
+        margin-right: 10px;
+    }
+    @include r(640){
         float: none;
         overflow: hidden;
+        margin-right: 0;
     }
+
     @include r(568){
         float: none;
         overflow: hidden;
+        margin-right: 0;
+    }
+
+    @include r(480){
+        float: none;
+        overflow: hidden;
+        margin-right: 0;
     }
 }
 
 .contact_block{
     float: left;
     margin: 0 11px 0 0;
-    /*@include r(320){
-        float: none;
-        margin: 0 0 0 0;
-    }*/
-    @include r(480){
+
+    @include r(640){
         float: none;
         margin: 0 0 0 0;
     }
+
     @include r(568){
         float: none;
         margin: 0 0 0 0;
     }
+
+    @include r(480){
+        float: none;
+        margin: 0 0 0 0;
+    }
+    /*@include r(320){
+        float: none;
+        margin: 0 0 0 0;
+    }*/
 }
 .contact_tel{
     margin: 27px 0 0px 0;
@@ -45,10 +64,16 @@
     /*@include r(320){
         text-align: center;
     }*/
-    @include r(480){
+
+    @include r(640){
         text-align: center;
     }
+
     @include r(568){
+        text-align: center;
+    }
+
+    @include r(480){
         text-align: center;
     }
 }
@@ -68,12 +93,17 @@
         margin: 5px 0 5px 0;
         text-align: center;
     }*/
-    @include r(480){
+    @include r(640){
         float: none;
         margin: 5px 0 5px 0;
         text-align: center;
     }
     @include r(568){
+        float: none;
+        margin: 5px 0 5px 0;
+        text-align: center;
+    }
+    @include r(480){
         float: none;
         margin: 5px 0 5px 0;
         text-align: center;
@@ -95,11 +125,15 @@
             display: initial;
             padding: 3px 20px 3px 20px;
         }*/
-        @include r(480){
+        @include r(640){
             display: initial;
             padding: 3px 20px 3px 20px;
         }
         @include r(568){
+            display: initial;
+            padding: 3px 20px 3px 20px;
+        }
+        @include r(480){
             display: initial;
             padding: 3px 20px 3px 20px;
         }

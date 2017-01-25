@@ -16,6 +16,15 @@
     @include r(568){
         padding: 0 5px 0 5px;;
     }
+    @include r(640){
+        padding: 0 5px 0 5px;;
+    }
+    @include r(768){
+        padding: 0 5px 0 5px;;
+    }
+    @include r(1024){
+        padding: 0 10px 0 10px;;
+    }
 }
 .apartments__topline__title{
     @include helvetica-light;
@@ -65,16 +74,39 @@
     display: none;
     float: left;
     margin: 0 0 0 47px;
-    @include r(320){
-        margin: 20px 0 0 0;
+    
+    @include r(640){
+        margin: 20px 0 0 2px;
     }
-    @include r(480){
-        margin: 20px 0 0 0;
-    }
+
     @include r(568){
         margin: 20px 0 0 0;
     }
+
+    @include r(480){
+        margin: 20px 0 0 0;
+    }
+
+    @include r(320){
+        margin: 20px 0 0 0;
+    }
 }
+
+@include r(736){
+    .choose_room--section-b{
+        margin-left: 40px;
+    }
+}
+@include r(667){
+        .choose_room--section-a{
+        margin: 0 0 0 28px;
+
+        }
+        .choose_room--section-b{
+        margin-left: 2px;
+        }
+}
+
 
 .choose_room__btn{
     float: left;

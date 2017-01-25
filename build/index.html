@@ -3160,12 +3160,10 @@
         </div>
         <!--observation web camera modal end-->
         <!--observation galary modal start-->
-        <div class="gallery_modal" id="gallery">
-          <div class="gallery">
-            <div class="gallery-slider">
-              <div class="gallery_item"> <img src="img/gallery-img.jpg" alt=""> </div>
-              <div class="gallery_item"> <img src="img/gallery-img.jpg" alt=""> </div>
-            </div>
+        <div class="gallery_modal mfp-hide" id="gallery">
+          <div class="slider-gallery">
+            <div class="slider-gallery__slide"> <img class="slider-gallery__img" src="../img/gallery-img.jpg"> </div>
+            <div class="slider-gallery__slide"> <img class="slider-gallery__img" src="../img/gallery-img.jpg"> </div>
           </div>
           <a href="#!" class="observation__modal__close gallery_close"></a>
           <a href="#!" class="gallery_arrow gallery_arrow--prev"></a>
@@ -3182,7 +3180,7 @@
         <!--web-camera end-->
         <!--observation galary start-->
         <section class="observation__button observation_gallery">
-          <a href="#!" class="observation__link gallery">
+          <a href="#gallery" class="observation__link gallery gallery-open">
             <h1 class="observation__title">галерея</h1>
             <p class="observation__text">Фотографии интерьра и экстерьера</p>
           </a>
