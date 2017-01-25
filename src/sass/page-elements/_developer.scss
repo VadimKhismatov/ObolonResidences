@@ -5,10 +5,59 @@
     background-repeat:no-repeat;
     background-position: right;
     padding: 0 0 101px 0;
+    @include r(1024){
+        background-position: top right;
+    }
+    @include r(768){
+        background-image: none;
+    }
 }
 .developer__logo_wrap{
     height: 163px;
     margin: 123px 0 0 12px;
+    @include r(320){
+        margin: 30px 0 0 0 ;
+
+        & img{
+            width: 320px;
+            height: 100px;
+        }
+    }
+    @include r(480){
+        margin: 30px 0 0 0 ;
+
+        & img{
+            width: 100%;
+            height: 100px;
+        }
+    }
+    @include r(568){
+        margin: 30px 0 0 0 ;
+
+        & img{
+            width: 100%;
+            height: 100px;
+        }
+    }
+    @include r(640){
+        margin: 30px 0 0 0 ;
+
+        & img{
+            width: 100%;
+            height: 100px;
+        }
+    }
+    @include r(768){
+        margin: 30px 0 0 0 ;
+
+        & img{
+            width: 100%;
+            height: 100px;
+        }
+    }
+    @include r(1024){
+        margin: 30px 0 0 0 ;
+    }
 }
 
 .developer__info_wrap{
@@ -28,6 +77,47 @@
     & p{
         margin: 0 0 16px 0px;
         line-height: 1.22;
+    }
+    
+    @include r(320){
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    @include r(480){
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    @include r(568){
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    @include r(640){
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @include r(768){
+        width: 33%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @include r(1024){
+        width: 33%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: 600;
     }
 }
 

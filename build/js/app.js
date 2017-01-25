@@ -4540,6 +4540,29 @@ function sayHello() {
 	/*>>retina*/
 	_checkInstance();
 });
+function mobileMenu() {
+	var $mobMenuWrap = $(".mb_menu_wrap");
+	var $mobMenu = $(".menu_mobile");
+	var $icon = $(".mb_menu_wrap__icon");
+	var $links = $mobMenu.find(".menu__link");
+	$mobMenuWrap.on("click", function (e) {
+		$(this).addClass("mb_menu_wrap--open");
+		$icon.hide();
+		$mobMenu.show();
+
+		$links.each(function () {
+			$(this).on("click", function (e) {
+				e.stopPropagation();
+				$links.removeClass("menu__link--active");
+				$(this).addClass("menu__link--active");
+
+				$mobMenu.hide();
+				$icon.show();
+				$mobMenuWrap.removeClass("mb_menu_wrap--open");
+			});
+		});
+	});
+};
 function apartments() {
 	console.log("apartments");
 
@@ -4861,12 +4884,13 @@ function apartments() {
 
 sayHello();
 $(document).ready(function () {
+	mobileMenu();
 	mainSlider();
 	formModal();
 	benefitsModal();
 	apartments();
 	webcam();
-	galary();
+	gallery();
 	initMap();
 });
 
@@ -4905,6 +4929,10 @@ function initMap() {
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		scrollwheel: false
 	};
+
+	if ($(window).width() <= 480) {
+		mapOptions.zoom = 15;
+	}
 
 	var map = new google.maps.Map(mapId, mapOptions);
 
@@ -4958,21 +4986,15 @@ function webcam() {
 	});
 };
 
-function galary() {
-	var $galleryMdl = $(".gallery_modal");
-
-	$(".gallery").on("click", function (e) {
-		e.preventDefault();
-		gallerySlider();
-		OffScroll();
-		$galleryMdl.css("display", "block");
+function gallery() {
+	$(".gallery-open").magnificPopup({
+		type: 'inline',
+		modal: true
 	});
-
-	$(".gallery_close").on("click", function (e) {
+	gallerySlider();
+	$(".gallery_close").on('click', function (e) {
 		e.preventDefault();
-		$galleryMdl.css("display", "none");
-		$(".gallery-slider").slick('unslick');
-		$(window).unbind("scroll");
+		$.magnificPopup.close();
 	});
 };
 
@@ -4994,13 +5016,20 @@ function mainSlider() {
 
 function gallerySlider() {
 
-	$(".gallery-slider").slick({
+	$(".slider-gallery").slick({
 		infinity: true,
 		arrows: true,
 		prevArrow: $(".gallery_arrow--prev"),
 		nextArrow: $(".gallery_arrow--next"),
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		speed: 1000
+		responsive: [{
+			breakpoint: 768,
+			arrows: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: false,
+			nextArrow: false
+		}]
 	});
 }

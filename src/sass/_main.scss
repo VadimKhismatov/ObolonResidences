@@ -18,22 +18,40 @@
     height: 201px;
     position: absolute;
     top: 0;
-    left: 44.7%;
+    left: 50%;
+    margin-left: -101px;
     background-color: #a59864;
     border-bottom:1px solid #fff;
     border-left:1px solid #fff;
     border-right:1px solid #fff;
-    z-index: 10000;
+    z-index: 1;
+         @include r(1023){
+             display:none;
+        }
+}
+.logo_wrap--mobile{
+    float: left;
+    padding: 5px;
+
+    @include rmin(1024){
+        display: none;
+    }
 }
  .logo{
      @include s(logo);
      margin: 76px auto 0 auto;
+     &--mobile{
+         @include s(logo-mobile);
+     }
  }
 
 .top_line{
     border-top: 1px solid #a59864;
     height: 53px;
     line-height: 53px;
+    @include r(1023){
+        display: none;
+    }
 }
 
 /*header end*/

@@ -13,7 +13,36 @@
 	<div class="logo_wrap">
 		<div class="logo"></div>
 	</div>
+	<div class="logo_wrap--mobile">
+		<div class="logo--mobile"></div>
+	</div>
 	<!--LOGO end-->
+
+	<!--menu mobile start-->
+	<div class="mb_menu_wrap">
+		<div class="mb_menu_wrap__icon"></div>
+		<ul class=" menu menu_mobile">
+			<li class="menu_mobile__item">
+				<a href="#!" class="menu__link">Преимущества</a>
+			</li>
+			<li class="menu_mobile__item">
+				<a href="#!" class="menu__link">Расположение</a>
+			</li>
+			<li class="menu_mobile__item">
+				<a href="#!" class="menu__link">Галерея</a>
+			</li>
+			<li class="menu_mobile__item">
+				<a href="#!" class="menu__link">Апартаменты</a>
+			</li>
+			<li class="menu_mobile__item">
+				<a href="#!" class="menu__link">Девелопер</a>
+			</li>
+			<li class="menu_mobile__item">
+				<a href="#!" class="menu__link">Контакты</a>
+			</li>
+		</ul>
+	</div>
+	<!--menu mobile end-->
 
 	<!--CONTAINER start-->
 	<section class="container container--header">
@@ -141,13 +170,13 @@
 	<!--observation web camera modal end-->
 
 	<!--observation galary modal start-->
-	<div class="gallery_modal" id="gallery">
-		{% include "partials/_galary.html" %}
+	<div class="gallery_modal mfp-hide" id="gallery">
+		{% include "partials/_gallery.html" %}
 		<a href="#!" class="observation__modal__close gallery_close"></a>
 		<a href="#!" class="gallery_arrow gallery_arrow--prev"></a>
 		<a href="#!" class="gallery_arrow gallery_arrow--next"></a>
-		
-		
+
+
 	</div>
 	<!--observation galary modal end-->
 
