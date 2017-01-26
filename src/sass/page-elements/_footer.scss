@@ -25,24 +25,6 @@
         width: 100%;
         margin-right: 0;
     }
-    
-    @include r(568){
-        float: none;
-        width: 100%;
-        margin-right: 0;
-    }
-
-    @include r(480){
-        float: none;
-        width: 100%;
-        margin-right: 0;
-    }
-
-    @include r(320){
-        float: none;
-        width: 100%;
-        margin-right: 0;
-    }
 }
 .contact_info_wrap{
     overflow: hidden;
@@ -57,27 +39,11 @@
         width: 100%;
         padding-left: 10px;
     }
-    @include r(480){
-        float: none;
-        width: 100%;
-        padding-left: 10px;
-    }
-    @include r(320){
-        float: none;
-        width: 100%;
-        padding-left: 10px;
-    }
 }
 
 .contact--email{
     padding: 36px 0 0 6px;
     @include r(568){
-        padding: 10px 0 0 10px;
-    }
-    @include r(480){
-        padding: 10px 0 0 10px;
-    }
-    @include r(320){
         padding: 10px 0 0 10px;
     }
 }
@@ -132,27 +98,6 @@
     
     @include r(667){
         width: 100%;;
-        margin: 14px 0 0 0;
-    }
-    
-    @include r(640){
-        width: 100%;
-        float: none;
-        margin: 14px 0 0 0;
-    }
-    @include r(568){
-        width: 100%;
-        float: none;
-        margin: 14px 0 0 0;
-    }
-    @include r(480){
-        width: 100%;
-        float: none;
-        margin: 14px 0 0 0;
-    }
-    @include r(320){
-        width: 100%;
-        float: none;
         margin: 14px 0 0 0;
     }
 }

@@ -7,18 +7,6 @@
 .apartments__topline{
     padding: 0 40px 0 40px;
     overflow: hidden;
-    @include r(320){
-        padding: 0 5px 0 5px;;
-    }
-    @include r(480){
-        padding: 0 5px 0 5px;;
-    }
-    @include r(568){
-        padding: 0 5px 0 5px;;
-    }
-    @include r(640){
-        padding: 0 5px 0 5px;;
-    }
     @include r(768){
         padding: 0 5px 0 5px;;
     }
@@ -80,14 +68,6 @@
     }
 
     @include r(568){
-        margin: 20px 0 0 0;
-    }
-
-    @include r(480){
-        margin: 20px 0 0 0;
-    }
-
-    @include r(320){
         margin: 20px 0 0 0;
     }
 }

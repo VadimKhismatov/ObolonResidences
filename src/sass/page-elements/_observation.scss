@@ -13,21 +13,6 @@
     color: #fff;
     text-decoration: none;
     text-align: center;
-    @include r(320){
-        padding-top: 55px;
-    }
-    @include r(480){
-        padding-top: 55px;
-    }
-    @include r(568){
-        padding-top: 55px;
-    }
-    @include r(640){
-        padding-top: 53px;
-    }
-    @include r(667){
-        padding-top: 53px;
-    }
     @include r(736){
         padding-top: 53px;
     }

@@ -3,21 +3,6 @@
 .apartments_info{
     padding: 0 40px 0 40px;
     overflow: hidden;
-    @include r(320){
-        padding: 0 10px 0 10px;
-    }
-    @include r(480){
-        padding: 0 10px 0 10px;
-    }
-    @include r(568){
-        padding: 0 10px 0 10px;
-    }
-    @include r(640){
-        padding: 0 10px 0 10px;
-    }
-    @include r(768){
-        padding: 0 10px 0 10px;
-    }
     @include r(1024){
         padding: 0 10px 0 10px;
     }
@@ -51,15 +36,7 @@
     letter-spacing: 0.7px;
     line-height: 1.7;
 
-    @include r(320){
-        margin-top: 20px;
-    }
-    @include r(480){
-        margin-top: 20px;
-    }
-    @include r(568){
-        margin-top: 20px;
-    }
+    
     @include r(640){
         margin-top: 20px;
     }
@@ -87,18 +64,6 @@
     letter-spacing: 0.6px;
     line-height: 1.3;
 
-    @include r(320){
-        margin-top: 50px;
-    }
-
-    @include r(480){
-        margin-top: 50px;
-    }
-
-    @include r(568){
-        margin-top: 50px;
-    }
-    
     @include r(640){
         margin-top: 50px;
     }
@@ -114,14 +79,7 @@
     margin: 46px 0 0 0;
     width: 228px;
 
- @include r(320){
-     width: 100%;
-     float: none;
- }
- @include r(480){
-     width: 100%;
-     float: none;
- }
+ 
  @include r(568){
      width: 100%;
      float: none;
@@ -264,27 +222,6 @@
         width: 100%;
         margin: 0;
     }
-    @include r(768){
-        width: 100%;
-        margin: 0;
-    }
-    @include r(640){
-        width: 100%;
-        margin: 0;
-    }
-    @include r(568){
-        width: 100%;
-        margin: 0;
-    }
-    @include r(480){
-        width: 100%;
-        margin: 0;
-    }
-
-    @include r(320){
-        width: 100%;
-        margin: 0;
-    }
     
 }
 .flat_modal__close{
@@ -293,26 +230,6 @@
     top: 61px;
     right: 71px;
     @include r(1024){
-        top: 10px;
-        right: 10px;
-    }
-    @include r(768){
-        top: 10px;
-        right: 10px;
-    }
-    @include r(640){
-        top: 10px;
-        right: 10px;
-    }
-    @include r(568){
-        top: 10px;
-        right: 10px;
-    }
-    @include r(480){
-        top: 10px;
-        right: 10px;
-    }
-    @include r(320){
         top: 10px;
         right: 10px;
     }
@@ -339,46 +256,6 @@
                 height: 100%;
         }
     }
-    @include r(640){
-        float: none;
-        width: 100%;
-        height: 300px;
-        margin: 50px 0 0 0;
-        & img{
-                width: 100%;
-                height: 100%;
-        }
-    }
-    @include r(568){
-        float: none;
-        width: 100%;
-        height: 300px;
-        margin: 50px 0 0 0;
-        & img{
-                width: 100%;
-                height: 100%;
-        }
-    }
-    @include r(480){
-        float: none;
-        width: 100%;
-        height: 300px;
-        margin: 50px 0 0 0;
-        & img{
-                width: 100%;
-                height: 100%;
-        }
-    }
-    @include r(320){
-        float: none;
-        width: 100%;
-        height: 300px;
-        margin: 50px 0 0 0;
-        & img{
-                width: 100%;
-                height: 100%;
-        }
-    }
 }
 .flat_modal__info{
     float: right;
@@ -391,47 +268,11 @@
         float: none;
         margin: 0 0 0 0;
     }
-    @include r(640){
-        float: none;
-        margin: 0 0 0 0;
-    }
-    @include r(568){
-        float: none;
-        margin: 0 0 0 0;
-    }
-    @include r(480){
-        float: none;
-        margin: 0 0 0 0;
-    }
-    @include r(320){
-        float: none;
-        margin: 0 0 0 0;
-    }
     
 }
 .info__title--flat_modal{
     font-size: em(24);
     @include r(1024){
-        font-size: em(18);
-        padding-left: 10px;
-    }
-    @include r(768){
-        font-size: em(18);
-        padding-left: 10px;
-    }
-    @include r(640){
-        font-size: em(18);
-        padding-left: 10px;
-    }
-    @include r(568){
-        font-size: em(18);
-        padding-left: 10px;
-    }
-    @include r(480){
-        font-size: em(18);
-        padding-left: 10px;
-    }
-    @include r(320){
         font-size: em(18);
         padding-left: 10px;
     }
@@ -458,45 +299,10 @@
         margin: 10px 0 0;
         padding: 0 10px; 
     }
-    @include r(768){
-        margin: 10px 0 0;
-        padding: 0 10px; 
-    }
-    @include r(640){
-        margin: 10px 0 0;
-        padding: 0 10px; 
-    }
-    @include r(568){
-        margin: 10px 0 0;
-        padding: 0 10px; 
-    }
-    @include r(480){
-        margin: 10px 0 0;
-        padding: 0 10px; 
-    }
-    @include r(320){
-        margin: 10px 0 0;
-        padding: 0 10px; 
-    }
 }
 .measurement__links--flat_modal{
     font-size: em(18);
     @include r(1024){
-        text-align: center;
-    }
-    @include r(768){
-        text-align: center;
-    }
-    @include r(640){
-        text-align: center;
-    }
-    @include r(568){
-        text-align: center;
-    }
-    @include r(480){
-        text-align: center;
-    }
-    @include r(320){
         text-align: center;
     }
 }

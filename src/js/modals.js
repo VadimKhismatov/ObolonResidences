@@ -45,8 +45,10 @@ function modals() {
             $.magnificPopup.close();
         });
     };
+
     //function for modal of gallery and slider in it
     function gallery() {
+
         //slider in gallery
         function gallerySlider() {
 

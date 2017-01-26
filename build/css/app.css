@@ -663,10 +663,6 @@ body {
 .contact_block {
   float: left;
   margin: 0 11px 0 0;
-  /*@include r(320){
-        float: none;
-        margin: 0 0 0 0;
-    }*/
 }
 
 .contact_tel {
@@ -685,9 +681,6 @@ body {
   font-style: normal;
   font-size: 0.875em;
   background-color: #901313;
-  /*@include r(320){
-        text-align: center;
-    }*/
 }
 
 .contact_appointment__link {
@@ -700,11 +693,6 @@ body {
 .lang_block {
   float: right;
   margin: 25px 0 0 0;
-  /*@include r(320){
-        float: none;
-        margin: 5px 0 5px 0;
-        text-align: center;
-    }*/
 }
 
 .lang_link {
@@ -714,10 +702,6 @@ body {
   font-style: normal;
   font-size: 0.875em;
   color: #a6a6a6;
-  /*@include r(320){
-            display: initial;
-            padding: 3px 20px 3px 20px;
-        }*/
 }
 
 .lang_link:hover {
@@ -834,12 +818,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  /*@include r(320){
-        display: block;
-    }
-    @include r(480){
-        display: block;
-    }*/
 }
 
 .slide__img_wrap {
@@ -866,12 +844,6 @@ body {
   height: 200px;
   background-position: -127px 0px;
   width: 117px;
-  /*@include r(320){
-        position: static;
-        float: left;
-        clear: right;
-        margin: 5px 3px 0 1px;
-    }*/
 }
 
 .slide__icon:hover {
@@ -886,11 +858,6 @@ body {
   width: 307px;
   margin: 0 0 0 40px;
   padding: 31px 0 33px 0;
-  /*@include r(320){
-        width: 100%;
-        margin: 0 0 0 0;
-        padding: 5px 10px 5px 10px;
-    }*/
 }
 
 .slide__info {
@@ -919,11 +886,6 @@ body {
   font-weight: bold;
   color: #191821;
   line-height: 1.22;
-  /*@include r(320){
-        width: 100%;
-        margin: 0;
-        padding: 5px 10px 5px 10px;
-    }*/
 }
 
 .benefit_info p {
@@ -1059,11 +1021,6 @@ body {
   float: right;
   width: 667px;
   padding: 0 0 0 61px;
-  /*@include r(320){
-        float: none;
-        width: 100%;
-        padding: 0 10px 0 10px;
-    }*/
 }
 
 .benefits_modal__info h1 {
@@ -2030,10 +1987,6 @@ body {
     padding: 0 5px 0 5px;
   }
 
-  .apartments_info {
-    padding: 0 10px 0 10px;
-  }
-
   .measurement {
     width: 50%;
     float: none;
@@ -2054,16 +2007,6 @@ body {
     width: 480px;
   }
 
-  .flat_modal__container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .flat_modal__close {
-    top: 10px;
-    right: 10px;
-  }
-
   .flat_modal__layout {
     float: none;
     width: 100%;
@@ -2079,20 +2022,6 @@ body {
   .flat_modal__info {
     float: none;
     margin: 0 0 0 0;
-  }
-
-  .info__title--flat_modal {
-    font-size: 1.125em;
-    padding-left: 10px;
-  }
-
-  .measurement--flat_modal {
-    margin: 10px 0 0;
-    padding: 0 10px;
-  }
-
-  .measurement__links--flat_modal {
-    text-align: center;
   }
 
   .observation__modal--webcam {
@@ -2188,10 +2117,6 @@ body {
     margin-left: 2px;
   }
 
-  .observation__link {
-    padding-top: 53px;
-  }
-
   .observation__button {
     height: 150px;
   }
@@ -2243,25 +2168,8 @@ body {
     height: 400px;
   }
 
-  .container--slider {
-    display: block;
-  }
-
   .slide__img_wrap {
     height: 400px;
-  }
-
-  .slide__icon {
-    position: static;
-    float: left;
-    clear: right;
-    margin: 5px 3px 0 1px;
-  }
-
-  .slide__info_block {
-    width: 100%;
-    margin: 0 0 0 0;
-    padding: 5px 10px 5px 10px;
   }
 
   .benefit_info {
@@ -2289,16 +2197,8 @@ body {
     margin-right: 60px;
   }
 
-  .apartments__topline {
-    padding: 0 5px 0 5px;
-  }
-
   .choose_room {
     margin: 20px 0 0 2px;
-  }
-
-  .apartments_info {
-    padding: 0 10px 0 10px;
   }
 
   .info__type-wrap {
@@ -2325,51 +2225,6 @@ body {
     width: 480px;
   }
 
-  .flat_modal__container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .flat_modal__close {
-    top: 10px;
-    right: 10px;
-  }
-
-  .flat_modal__layout {
-    float: none;
-    width: 100%;
-    height: 300px;
-    margin: 50px 0 0 0;
-  }
-
-  .flat_modal__layout img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .flat_modal__info {
-    float: none;
-    margin: 0 0 0 0;
-  }
-
-  .info__title--flat_modal {
-    font-size: 1.125em;
-    padding-left: 10px;
-  }
-
-  .measurement--flat_modal {
-    margin: 10px 0 0;
-    padding: 0 10px;
-  }
-
-  .measurement__links--flat_modal {
-    text-align: center;
-  }
-
-  .observation__link {
-    padding-top: 53px;
-  }
-
   .observation__button {
     height: 150px;
   }
@@ -2405,70 +2260,15 @@ body {
     width: 100%;
     margin-right: 0;
   }
-
-  .footer__form_wrap {
-    width: 100%;
-    float: none;
-    margin: 14px 0 0 0;
-  }
 }
 @media only screen and (max-width: 568px) {
-
-  .top_contacts {
-    float: none;
-    overflow: hidden;
-    margin-right: 0;
-  }
-
-  .contact_block {
-    float: none;
-    margin: 0 0 0 0;
-  }
-
-  .contact_appointment {
-    text-align: center;
-  }
-
-  .lang_block {
-    float: none;
-    margin: 5px 0 5px 0;
-    text-align: center;
-  }
-
-  .lang_link {
-    display: initial;
-    padding: 3px 20px 3px 20px;
-  }
 
   .slider {
     height: 380px;
   }
 
-  .container--slider {
-    display: block;
-  }
-
   .slide__img_wrap {
     height: 380px;
-  }
-
-  .slide__icon {
-    position: static;
-    float: left;
-    clear: right;
-    margin: 5px 3px 0 1px;
-  }
-
-  .slide__info_block {
-    width: 100%;
-    margin: 0 0 0 0;
-    padding: 5px 10px 5px 10px;
-  }
-
-  .benefit_info {
-    width: 100%;
-    margin: 0;
-    padding: 5px 10px 5px 10px;
   }
 
   .benefits_galary__row--second {
@@ -2490,24 +2290,8 @@ body {
     margin-right: 42px;
   }
 
-  .apartments__topline {
-    padding: 0 5px 0 5px;
-  }
-
   .choose_room {
     margin: 20px 0 0 0;
-  }
-
-  .apartments_info {
-    padding: 0 10px 0 10px;
-  }
-
-  .info__type-wrap {
-    margin-top: 20px;
-  }
-
-  .info__text {
-    margin-top: 50px;
   }
 
   .measurement {
@@ -2522,51 +2306,6 @@ body {
 
   .apartment_layout img {
     width: 380px;
-  }
-
-  .flat_modal__container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .flat_modal__close {
-    top: 10px;
-    right: 10px;
-  }
-
-  .flat_modal__layout {
-    float: none;
-    width: 100%;
-    height: 300px;
-    margin: 50px 0 0 0;
-  }
-
-  .flat_modal__layout img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .flat_modal__info {
-    float: none;
-    margin: 0 0 0 0;
-  }
-
-  .info__title--flat_modal {
-    font-size: 1.125em;
-    padding-left: 10px;
-  }
-
-  .measurement--flat_modal {
-    margin: 10px 0 0;
-    padding: 0 10px;
-  }
-
-  .measurement__links--flat_modal {
-    text-align: center;
-  }
-
-  .observation__link {
-    padding-top: 55px;
   }
 
   .observation__button {
@@ -2594,19 +2333,6 @@ body {
     height: 100px;
   }
 
-  .developer__info {
-    width: 100%;
-    margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .contacts_block {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-  }
-
   .contact {
     float: none;
     width: 100%;
@@ -2616,40 +2342,8 @@ body {
   .contact--email {
     padding: 10px 0 0 10px;
   }
-
-  .footer__form_wrap {
-    width: 100%;
-    float: none;
-    margin: 14px 0 0 0;
-  }
 }
 @media only screen and (max-width: 480px) {
-
-  .top_contacts {
-    float: none;
-    overflow: hidden;
-    margin-right: 0;
-  }
-
-  .contact_block {
-    float: none;
-    margin: 0 0 0 0;
-  }
-
-  .contact_appointment {
-    text-align: center;
-  }
-
-  .lang_block {
-    float: none;
-    margin: 5px 0 5px 0;
-    text-align: center;
-  }
-
-  .lang_link {
-    display: initial;
-    padding: 3px 20px 3px 20px;
-  }
 
   .slider {
     height: 320px;
@@ -2657,25 +2351,6 @@ body {
 
   .slide__img_wrap {
     height: 320px;
-  }
-
-  .slide__icon {
-    position: static;
-    float: left;
-    clear: right;
-    margin: 5px 3px 0 1px;
-  }
-
-  .slide__info_block {
-    width: 100%;
-    margin: 0 0 0 0;
-    padding: 5px 10px 5px 10px;
-  }
-
-  .benefit_info {
-    width: 100%;
-    margin: 0;
-    padding: 5px 10px 5px 10px;
   }
 
   .benefits_galary__row--second {
@@ -2697,31 +2372,6 @@ body {
     margin-right: 20px;
   }
 
-  .apartments__topline {
-    padding: 0 5px 0 5px;
-  }
-
-  .choose_room {
-    margin: 20px 0 0 0;
-  }
-
-  .apartments_info {
-    padding: 0 10px 0 10px;
-  }
-
-  .info__type-wrap {
-    margin-top: 20px;
-  }
-
-  .info__text {
-    margin-top: 50px;
-  }
-
-  .measurement {
-    width: 100%;
-    float: none;
-  }
-
   .apartment_layout {
     width: 100%;
     padding-left: 0;
@@ -2729,51 +2379,6 @@ body {
 
   .apartment_layout img {
     width: 320px;
-  }
-
-  .flat_modal__container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .flat_modal__close {
-    top: 10px;
-    right: 10px;
-  }
-
-  .flat_modal__layout {
-    float: none;
-    width: 100%;
-    height: 300px;
-    margin: 50px 0 0 0;
-  }
-
-  .flat_modal__layout img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .flat_modal__info {
-    float: none;
-    margin: 0 0 0 0;
-  }
-
-  .info__title--flat_modal {
-    font-size: 1.125em;
-    padding-left: 10px;
-  }
-
-  .measurement--flat_modal {
-    margin: 10px 0 0;
-    padding: 0 10px;
-  }
-
-  .measurement__links--flat_modal {
-    text-align: center;
-  }
-
-  .observation__link {
-    padding-top: 55px;
   }
 
   .gallery_modal {
@@ -2793,35 +2398,6 @@ body {
   .developer__logo_wrap img {
     width: 100%;
     height: 100px;
-  }
-
-  .developer__info {
-    width: 100%;
-    margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .contacts_block {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .contact {
-    float: none;
-    width: 100%;
-    padding-left: 10px;
-  }
-
-  .contact--email {
-    padding: 10px 0 0 10px;
-  }
-
-  .footer__form_wrap {
-    width: 100%;
-    float: none;
-    margin: 14px 0 0 0;
   }
 
   .form--sign_up {
@@ -2878,33 +2454,8 @@ body {
 }
 @media only screen and (max-width: 320px) {
 
-  .apartments__topline {
-    padding: 0 5px 0 5px;
-  }
-
-  .choose_room {
-    margin: 20px 0 0 0;
-  }
-
   .choose_room__btn--penthouse {
     margin-top: 10px;
-  }
-
-  .apartments_info {
-    padding: 0 10px 0 10px;
-  }
-
-  .info__type-wrap {
-    margin-top: 20px;
-  }
-
-  .info__text {
-    margin-top: 50px;
-  }
-
-  .measurement {
-    width: 100%;
-    float: none;
   }
 
   .apartment_layout {
@@ -2916,53 +2467,8 @@ body {
     width: 300px;
   }
 
-  .flat_modal__container {
-    width: 100%;
-    margin: 0;
-  }
-
-  .flat_modal__close {
-    top: 10px;
-    right: 10px;
-  }
-
-  .flat_modal__layout {
-    float: none;
-    width: 100%;
-    height: 300px;
-    margin: 50px 0 0 0;
-  }
-
-  .flat_modal__layout img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .flat_modal__info {
-    float: none;
-    margin: 0 0 0 0;
-  }
-
-  .info__title--flat_modal {
-    font-size: 1.125em;
-    padding-left: 10px;
-  }
-
   .measurement--flat_modal table tr td {
     font-size: 1em;
-  }
-
-  .measurement--flat_modal {
-    margin: 10px 0 0;
-    padding: 0 10px;
-  }
-
-  .measurement__links--flat_modal {
-    text-align: center;
-  }
-
-  .observation__link {
-    padding-top: 55px;
   }
 
   .gallery_modal {
@@ -2982,35 +2488,6 @@ body {
   .developer__logo_wrap img {
     width: 320px;
     height: 100px;
-  }
-
-  .developer__info {
-    width: 100%;
-    margin: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .contacts_block {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .contact {
-    float: none;
-    width: 100%;
-    padding-left: 10px;
-  }
-
-  .contact--email {
-    padding: 10px 0 0 10px;
-  }
-
-  .footer__form_wrap {
-    width: 100%;
-    float: none;
-    margin: 14px 0 0 0;
   }
 
   .form__title {
