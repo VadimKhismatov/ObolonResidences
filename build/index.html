@@ -34,12 +34,12 @@
         <div class="mb_menu_wrap">
           <div class="mb_menu_wrap__icon"></div>
           <ul class=" menu menu_mobile">
-            <li class="menu_mobile__item"> <a href="#!" class="menu__link">Преимущества</a> </li>
-            <li class="menu_mobile__item"> <a href="#!" class="menu__link">Расположение</a> </li>
-            <li class="menu_mobile__item"> <a href="#!" class="menu__link">Галерея</a> </li>
-            <li class="menu_mobile__item"> <a href="#!" class="menu__link">Апартаменты</a> </li>
-            <li class="menu_mobile__item"> <a href="#!" class="menu__link">Девелопер</a> </li>
-            <li class="menu_mobile__item"> <a href="#!" class="menu__link">Контакты</a> </li>
+            <li class="menu_mobile__item"> <a href="#benefits" class="menu__link">Преимущества</a> </li>
+            <li class="menu_mobile__item"> <a href="#location" class="menu__link">Расположение</a> </li>
+            <li class="menu_mobile__item"> <a href="#gallery" class="menu__link">Галерея</a> </li>
+            <li class="menu_mobile__item"> <a href="#apartments" class="menu__link">Апартаменты</a> </li>
+            <li class="menu_mobile__item"> <a href="#developer" class="menu__link">Девелопер</a> </li>
+            <li class="menu_mobile__item"> <a href="#contacts" class="menu__link">Контакты</a> </li>
           </ul>
         </div>
         <!--menu mobile end-->
@@ -62,33 +62,21 @@
             <div class="menu_left_wrap">
               <nav>
                 <ul class="menu menu--left">
-                  <li class="menu__item menu__item--left menu__item--benefits"> <a href="#!" class="menu__link menu__link--active">Преимущества</a> </li>
-                  <li class="menu__item menu__item--left menu__item--location"> <a href="#!" class="menu__link">Расположение</a> </li>
-                  <li class="menu__item menu__item--left menu__item--galary"> <a href="#!" class="menu__link">Галерея</a> </li>
+                  <li class="menu__item menu__item--left menu__item--benefits"> <a href="#benefits" class="menu__link">Преимущества</a> </li>
+                  <li class="menu__item menu__item--left menu__item--location"> <a href="#location" class="menu__link">Расположение</a> </li>
+                  <li class="menu__item menu__item--left menu__item--galary"> <a href="#gallery" class="menu__link">Галерея</a> </li>
                 </ul>
               </nav>
             </div>
             <div class="menu_right_wrap">
               <nav>
                 <ul class="menu menu--right">
-                  <li class="menu__item menu__item--right menu__item--apartments"> <a href="#!" class="menu__link">Апартаменты</a> </li>
-                  <li class="menu__item menu__item--right menu__item--developer"> <a href="#!" class="menu__link">Девелопер</a> </li>
-                  <li class="menu__item menu__item--right menu__item--contacts"> <a href="#!" class="menu__link">Контакты</a> </li>
+                  <li class="menu__item menu__item--right menu__item--apartments"> <a href="#apartments" class="menu__link">Апартаменты</a> </li>
+                  <li class="menu__item menu__item--right menu__item--developer"> <a href="#developer" class="menu__link">Девелопер</a> </li>
+                  <li class="menu__item menu__item--right menu__item--contacts"> <a href="#contacts" class="menu__link">Контакты</a> </li>
                 </ul>
               </nav>
             </div>
-            <!--menu mobile start-->
-            <nav>
-              <ul class=" menu menu_mobile">
-                <li class="menu_mobile__item"> <a href="#!" class="menu__link menu__link--active">Преимущества</a> </li>
-                <li class="menu_mobile__item"> <a href="#!" class="menu__link">Расположение</a> </li>
-                <li class="menu_mobile__item"> <a href="#!" class="menu__link">Галерея</a> </li>
-                <li class="menu_mobile__item"> <a href="#!" class="menu__link">Апартаменты</a> </li>
-                <li class="menu_mobile__item"> <a href="#!" class="menu__link">Девелопер</a> </li>
-                <li class="menu_mobile__item"> <a href="#!" class="menu__link">Контакты</a> </li>
-              </ul>
-            </nav>
-            <!--menu mobile end-->
           </section>
           <!--CONTAINER end-->
         </div>
@@ -128,7 +116,7 @@
       </header>
       <!--HEADER end-->
       <!--BENEFITS block start-->
-      <section class="benefits_block">
+      <section class="benefits_block" id="benefits">
         <div class="benefits_modal mfp-hide" id="benefits_modal_link">
           <div class="benefits_modal__img"></div>
           <div class="benefits_modal__info">
@@ -249,12 +237,12 @@
       </section>
       <!--BENEFITS block end-->
       <!--MAP start-->
-      <section class="map_block">
+      <section class="map_block" id="location">
         <div id="map" class="map"></div>
       </section>
       <!--MAP end-->
       <!--apartments start-->
-      <section class="apartments">
+      <section class="apartments" id="apartments">
         <section class="container">
           <!--apartments topline start-->
           <section class="apartments__topline">
@@ -3153,14 +3141,14 @@
       </section>
       <!--apartments end-->
       <!--observation start-->
-      <section class="observation">
+      <section class="observation" id="gallery">
         <!--observation web camera modal start-->
         <div class="observation__modal observation__modal--webcam mfp-hide" id="webcam"> <img src="http://31.43.111.146/video2.mjpg" />
           <a href="#!" class="observation__modal__close webcam_close"></a>
         </div>
         <!--observation web camera modal end-->
         <!--observation galary modal start-->
-        <div class="gallery_modal mfp-hide" id="gallery">
+        <div class="gallery_modal mfp-hide" id="gallery-modal">
           <div class="slider-gallery">
             <div class="slider-gallery__slide"> <img class="slider-gallery__img" src="img/gallery-img.jpg"> </div>
             <div class="slider-gallery__slide"> <img class="slider-gallery__img" src="img/gallery-img.jpg"> </div>
@@ -3180,7 +3168,7 @@
         <!--web-camera end-->
         <!--observation galary start-->
         <section class="observation__button observation_gallery">
-          <a href="#gallery" class="observation__link gallery gallery-open">
+          <a href="#gallery-modal" class="observation__link gallery gallery-open">
             <h1 class="observation__title">галерея</h1>
             <p class="observation__text">Фотографии интерьра и экстерьера</p>
           </a>
@@ -3189,7 +3177,7 @@
       </section>
       <!--observation end-->
       <!--developer start-->
-      <section class="developer">
+      <section class="developer" id="developer">
         <section class="container">
           <!--developer logo start-->
           <div class="developer__logo_wrap"> <img src="img/developer-logo.png" alt="Dragon-Ukrainian Properties & Development plc"> </div>
@@ -3222,7 +3210,7 @@
       </section>
       <!--developer end-->
       <!--footer start-->
-      <section class="footer">
+      <section class="footer" id="contacts">
         <section class="container">
           <!--footer facebook start-->
           <section class="facebook">

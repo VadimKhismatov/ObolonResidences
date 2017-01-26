@@ -23,22 +23,22 @@
 		<div class="mb_menu_wrap__icon"></div>
 		<ul class=" menu menu_mobile">
 			<li class="menu_mobile__item">
-				<a href="#!" class="menu__link">Преимущества</a>
+				<a href="#benefits" class="menu__link">Преимущества</a>
 			</li>
 			<li class="menu_mobile__item">
-				<a href="#!" class="menu__link">Расположение</a>
+				<a href="#location" class="menu__link">Расположение</a>
 			</li>
 			<li class="menu_mobile__item">
-				<a href="#!" class="menu__link">Галерея</a>
+				<a href="#gallery" class="menu__link">Галерея</a>
 			</li>
 			<li class="menu_mobile__item">
-				<a href="#!" class="menu__link">Апартаменты</a>
+				<a href="#apartments" class="menu__link">Апартаменты</a>
 			</li>
 			<li class="menu_mobile__item">
-				<a href="#!" class="menu__link">Девелопер</a>
+				<a href="#developer" class="menu__link">Девелопер</a>
 			</li>
 			<li class="menu_mobile__item">
-				<a href="#!" class="menu__link">Контакты</a>
+				<a href="#contacts" class="menu__link">Контакты</a>
 			</li>
 		</ul>
 	</div>
@@ -112,7 +112,7 @@
 <!--HEADER end-->
 
 <!--BENEFITS block start-->
-<section class="benefits_block">
+<section class="benefits_block" id="benefits">
 
 	<div class="benefits_modal mfp-hide" id="benefits_modal_link">
 		{% include "partials/_concierge-modal.html"%}
@@ -135,7 +135,7 @@
 
 <!--MAP start-->
 
-<section class="map_block">
+<section class="map_block" id="location">
 	<div id="map" class="map"></div>
 </section>
 
@@ -143,7 +143,7 @@
 
 <!--apartments start-->
 
-<section class="apartments">
+<section class="apartments" id="apartments">
 	<section class="container">
 
 		<!--apartments topline start-->
@@ -161,7 +161,7 @@
 
 <!--observation start-->
 
-<section class="observation">
+<section class="observation" id="gallery">
 	<!--observation web camera modal start-->
 	<div class="observation__modal observation__modal--webcam mfp-hide" id="webcam">
 		<img src="http://31.43.111.146/video2.mjpg" />
@@ -170,7 +170,7 @@
 	<!--observation web camera modal end-->
 
 	<!--observation galary modal start-->
-	<div class="gallery_modal mfp-hide" id="gallery">
+	<div class="gallery_modal mfp-hide" id="gallery-modal">
 		{% include "partials/_gallery.html" %}
 		<a href="#!" class="observation__modal__close gallery_close"></a>
 		<a href="#!" class="gallery_arrow gallery_arrow--prev"></a>
@@ -188,7 +188,7 @@
 
 <!--developer start-->
 
-<section class="developer">
+<section class="developer" id="developer">
 	<section class="container">
 
 		{% include "partials/_developer.html" %}
@@ -199,7 +199,7 @@
 <!--developer end-->
 
 <!--footer start-->
-<section class="footer">
+<section class="footer" id="contacts">
 
 	<section class="container">
 		{% include "partials/_footer.html" %}
