@@ -19,11 +19,13 @@
     }
 }
 
-.slide__img_wrap{
+.slide__img{
     width: 100%;
     overflow: hidden;
     height: 729px;
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     @include r(768){
         height: 480px;
     }
@@ -43,10 +45,6 @@
     @include r(400){
         height: 300px;
     }
-}
-.slide__img{
-    width: 100%;
-    height: 100%;
 }
 
 /*slider end*/

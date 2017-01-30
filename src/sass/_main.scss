@@ -55,12 +55,15 @@
 }
 
 .container--header-footer{
-    overflow: visible;
     display: block;
     position: relative;
  
     @include r(768){
         display: block;
+    }
+    @include rmin(1200){
+        display: block;
+        overflow: visible;
     }
 }
 
@@ -84,7 +87,7 @@
         clear: right;
         margin: 5px 3px 0 1px;
     }
-    @include r(1024){
+    @include r(1313){
         position: static;
         float: left;
         clear: right;
@@ -103,18 +106,21 @@
         padding: 5px 10px 5px 10px;
     }
     @include r(1024){
-        width: 29%;
+        width: 100%;
         margin: 0 0 0 0;
         padding: 5px 10px 5px 10px;
     }
 
     .header-footer__info{
-        display: inline-block;
         columns: 307px 3;
         @include helvetica-light;
         font-size: em(14);
         color: #fff;
         line-height: 1.22;
+
+        @include r(768){
+            columns: auto;
+        }
     }
 }
 

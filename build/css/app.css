@@ -649,7 +649,6 @@ body {
 }
 
 .container--header-footer {
-  overflow: visible;
   display: block;
   position: relative;
 }
@@ -683,7 +682,6 @@ body {
 }
 
 .header-footer__info-block .header-footer__info {
-  display: inline-block;
   -webkit-columns: 307px 3;
   -moz-columns: 307px 3;
   columns: 307px 3;
@@ -702,16 +700,16 @@ body {
 
 /*apartments end*/
 /*top-contacts start*/
-.top_contacts {
+.header_contacts {
   float: right;
 }
 
-.contact_block {
+.header_contacts__wrap {
   float: left;
   margin: 0 11px 0 0;
 }
 
-.contact_tel {
+.header_contacts__tel {
   margin: 27px 0 0px 0;
   font-family: "HelveticaNeueCyrMedium", sans-serif;
   font-style: normal;
@@ -721,7 +719,7 @@ body {
   letter-spacing: 1px;
 }
 
-.contact_appointment {
+.header_contacts__appointment {
   margin: 6px 0 0 0;
   font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
@@ -729,7 +727,7 @@ body {
   background-color: #901313;
 }
 
-.contact_appointment__link {
+.header_contacts__appointment-link {
   display: block;
   padding: 10px 15px 11px 16px;
   color: #ffffff;
@@ -757,7 +755,7 @@ body {
 /*top-contacts end*/
 /*menu start*/
 .menu_left_wrap {
-  float: left;
+  display: inline-block;
   margin: 0 0 0 40px;
 }
 
@@ -772,32 +770,14 @@ body {
 
 .menu__item {
   float: left;
+  margin: 0 48px 0 0;
 }
 
-.menu__item--benefits {
-  margin: 0 49px 0 0;
+.menu__item--right {
+  margin: 0 0 0 61px;
 }
 
-.menu__item--location {
-  margin: 0 45px 0 0;
-}
-
-.menu__item--galary {
-  margin: 0 44px 0 0;
-  letter-spacing: 0.5px;
-}
-
-.menu__item--apartments {
-  margin: 0 0 0 0;
-}
-
-.menu__item--developer {
-  margin: 0px 0 0 64px;
-  letter-spacing: 0.5px;
-}
-
-.menu__item--contacts {
-  margin: 0 0px 0 55px;
+.menu__item--last {
   letter-spacing: 0.5px;
 }
 
@@ -842,12 +822,12 @@ body {
   height: 100%;
 }
 
-.menu_mobile {
+.mb_menu {
   display: none;
   text-align: center;
 }
 
-.menu_mobile a {
+.mb_menu a {
   padding: 20px;
 }
 
@@ -858,15 +838,13 @@ body {
   overflow: hidden;
 }
 
-.slide__img_wrap {
+.slide__img {
   width: 100%;
   overflow: hidden;
   height: 729px;
-}
-
-.slide__img {
-  width: 100%;
-  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*slider end*/
@@ -903,19 +881,6 @@ body {
   overflow: hidden;
 }
 
-.benefits_galary__row {
-  overflow: hidden;
-}
-
-.benefits_galary__row--second {
-  overflow: hidden;
-  padding: 0 40px 0 134px;
-}
-
-.benefits_galary__row--second > .benefits_galary_item {
-  margin-top: 4px;
-}
-
 .benefits_galary_item {
   float: left;
   width: 200px;
@@ -926,14 +891,15 @@ body {
   font-weight: bold;
 }
 
+.benefits_galary_item a {
+  text-decoration: none;
+  display: block;
+}
+
 .benefits_galary_item__title {
   text-align: center;
   letter-spacing: 1px;
   margin: 11px 0px 0 0px;
-}
-
-.benefits_galary_item__title--link {
-  text-decoration: none;
   color: #272425;
 }
 
@@ -951,10 +917,6 @@ body {
   text-align: center;
   padding: 49px 0px 0 0px;
   background-color: rgba(181, 181, 181, 0.6);
-}
-
-.benefits_galary_item__more_info a {
-  text-decoration: none;
   color: #fff;
 }
 
@@ -1296,19 +1258,21 @@ body {
 /*flat modal start*/
 .flat_modal {
   display: none;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 4700px;
   top: 0;
   left: 0;
-  background-color: #fff;
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
 }
 
 .flat_modal__container {
-  width: 1300px;
+  width: 100%;
   overflow: hidden;
-  margin: 200px auto 0 auto;
+  margin: 200px 0 0 0;
+  background-color: #fff;
+  position: relative;
 }
 
 .flat_modal__close {
@@ -1317,8 +1281,8 @@ body {
   height: 50px;
   background-position: -421px -59px;
   position: absolute;
-  top: 61px;
-  right: 71px;
+  top: 10px;
+  right: 20px;
 }
 
 .flat_modal__layout {
@@ -1684,6 +1648,25 @@ body {
   .mb_menu_wrap {
     display: none;
   }
+
+  .flat_modal__container {
+    top: 2%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+
+  .container--header-footer {
+    display: block;
+    overflow: visible;
+  }
+}
+@media only screen and (min-width: 1300px) {
+
+  .flat_modal__container {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
 
@@ -1741,6 +1724,27 @@ body {
     padding: 0;
   }
 }
+@media only screen and (max-width: 1313px) {
+
+  .header-footer__icon {
+    position: static;
+    float: left;
+    clear: right;
+    margin: 0 3px 0 1px;
+  }
+}
+@media only screen and (max-width: 1258px) {
+
+  .flat_modal__layout {
+    width: 60%;
+    margin: 47px 0 0 0;
+  }
+
+  .flat_modal__layout img {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media only screen and (max-width: 1200px) {
 
   .gallery_modal {
@@ -1753,23 +1757,20 @@ body {
     height: 768px;
   }
 }
-@media only screen and (max-width: 1024px) {
-
-  .header-footer__icon {
-    position: static;
-    float: left;
-    clear: right;
-    margin: 0 3px 0 1px;
-  }
-
-  .header-footer__info-block {
-    width: 29%;
-    margin: 0 0 0 0;
-    padding: 5px 10px 5px 10px;
-  }
+@media only screen and (max-width: 1040px) {
 
   .benefit_info {
-    margin-left: 34px;
+    width: 33%;
+    margin: 0;
+    padding: 5px 10px 5px 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+
+  .header-footer__info-block {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 5px 10px 5px 10px;
   }
 
   .benefits_galary_item {
@@ -1786,8 +1787,15 @@ body {
     padding: 0 10px 0 10px;
   }
 
+  .measurement {
+    width: 50%;
+    float: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .flat_modal__container {
-    width: 100%;
     margin: 0;
   }
 
@@ -1797,8 +1805,10 @@ body {
   }
 
   .flat_modal__layout {
-    width: 70%;
-    margin: 50px 0 0 0;
+    float: none;
+    width: 90%;
+    height: 300px;
+    margin: 50px auto 0 auto;
   }
 
   .flat_modal__layout img {
@@ -1807,6 +1817,7 @@ body {
   }
 
   .flat_modal__info {
+    float: none;
     margin: 116px 0 0 0;
   }
 
@@ -1816,7 +1827,6 @@ body {
   }
 
   .measurement--flat_modal {
-    margin: 10px 0 0;
     padding: 0 10px;
   }
 
@@ -1912,7 +1922,13 @@ body {
     padding: 5px 10px 5px 10px;
   }
 
-  .top_contacts {
+  .header-footer__info-block .header-footer__info {
+    -webkit-columns: auto;
+    -moz-columns: auto;
+    columns: auto;
+  }
+
+  .header_contacts {
     margin-right: 10px;
   }
 
@@ -1929,33 +1945,14 @@ body {
     height: 480px;
   }
 
-  .slide__img_wrap {
+  .slide__img {
     height: 480px;
-  }
-
-  .benefit_info {
-    width: 33%;
-    margin: 0;
-    padding: 5px 10px 5px 10px;
-  }
-
-  .benefits_galary__row--second {
-    padding: 0 0 0 0;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item {
-    margin-top: 70px;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item:last-child {
-    margin-left: 284px;
-    margin-right: 284px;
   }
 
   .benefits_galary_item {
     float: left;
-    margin-left: 92px;
-    margin-right: 92px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 
   .benefits_modal {
@@ -2072,8 +2069,8 @@ body {
 
   .benefits_galary_item {
     float: left;
-    margin-left: 84px;
-    margin-right: 84px;
+    margin-left: 64px;
+    margin-right: 64px;
   }
 
   .choose_room--section-b {
@@ -2090,23 +2087,10 @@ body {
 }
 @media only screen and (max-width: 667px) {
 
-  .benefits_galary__row--second {
-    padding: 0 0 0 0;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item {
-    margin-top: 70px;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item:last-child {
-    margin-left: 233px;
-    margin-right: 233px;
-  }
-
   .benefits_galary_item {
     float: left;
-    margin-left: 66px;
-    margin-right: 66px;
+    margin-left: 55px;
+    margin-right: 55px;
   }
 
   .choose_room--section-a {
@@ -2138,18 +2122,18 @@ body {
 }
 @media only screen and (max-width: 640px) {
 
-  .top_contacts {
+  .header_contacts {
     float: none;
     overflow: hidden;
     margin-right: 0;
   }
 
-  .contact_block {
+  .header_contacts__wrap {
     float: none;
     margin: 0 0 0 0;
   }
 
-  .contact_appointment {
+  .header_contacts__appointment {
     text-align: center;
   }
 
@@ -2168,7 +2152,7 @@ body {
     height: 400px;
   }
 
-  .slide__img_wrap {
+  .slide__img {
     height: 400px;
   }
 
@@ -2178,23 +2162,10 @@ body {
     padding: 5px 10px 5px 10px;
   }
 
-  .benefits_galary__row--second {
-    padding: 0 0 0 0;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item {
-    margin-top: 70px;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item:last-child {
-    margin-left: 220px;
-    margin-right: 220px;
-  }
-
   .benefits_galary_item {
     float: left;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .choose_room {
@@ -2267,27 +2238,14 @@ body {
     height: 380px;
   }
 
-  .slide__img_wrap {
+  .slide__img {
     height: 380px;
-  }
-
-  .benefits_galary__row--second {
-    padding: 0 0 0 0;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item {
-    margin-top: 70px;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item:last-child {
-    margin-left: 184px;
-    margin-right: 184px;
   }
 
   .benefits_galary_item {
     float: left;
-    margin-left: 42px;
-    margin-right: 42px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .choose_room {
@@ -2349,27 +2307,8 @@ body {
     height: 320px;
   }
 
-  .slide__img_wrap {
+  .slide__img {
     height: 320px;
-  }
-
-  .benefits_galary__row--second {
-    padding: 0 0 0 0;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item {
-    margin-top: 70px;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item:last-child {
-    margin-left: 140px;
-    margin-right: 140px;
-  }
-
-  .benefits_galary_item {
-    float: left;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   .apartment_layout {
@@ -2417,19 +2356,6 @@ body {
 }
 @media only screen and (max-width: 479px) {
 
-  .benefits_galary__row--second {
-    padding: 0 0 0 0;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item {
-    margin-top: 70px;
-  }
-
-  .benefits_galary__row--second > .benefits_galary_item:last-child {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .benefits_galary_item {
     float: none;
     margin-left: auto;
@@ -2442,7 +2368,7 @@ body {
     height: 300px;
   }
 
-  .slide__img_wrap {
+  .slide__img {
     height: 300px;
   }
 }

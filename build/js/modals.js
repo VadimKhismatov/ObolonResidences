@@ -10,7 +10,7 @@ function modals() {
 
     //function for opening modal of callback form
     function formModal() {
-        $('.contact_appointment__link').magnificPopup({
+        $('.header_contacts__appointment-link').magnificPopup({
             type: 'inline',
             modal: true
         });

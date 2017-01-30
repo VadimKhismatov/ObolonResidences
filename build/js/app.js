@@ -4550,7 +4550,7 @@ function menu() {
 
 	function mobileMenu() {
 		var $mobMenuWrap = $(".mb_menu_wrap");
-		var $mobMenu = $(".menu_mobile");
+		var $mobMenu = $(".mb_menu");
 		var $icon = $(".mb_menu_wrap__icon");
 		var $links = $mobMenu.find(".menu__link");
 		$mobMenuWrap.on("click", function (e) {
@@ -4611,6 +4611,7 @@ function apartments() {
 
 		var $allRoomsBlock = $(".choose_room");
 		var $allRooms = $apartmentsSection.find(".room");
+		console.log("$allRooms", $allRooms);
 		var $allFlats = $allRooms.find(".flat");
 
 		$allRooms.hide();
@@ -4644,6 +4645,7 @@ function apartments() {
 		$btnRooms = $sectionRoomBlock.find(".apartments__topline__rooms").children();
 		$btnRooms.removeClass("room-active");
 		$btnRooms.eq(0).addClass("room-active");
+		console.log("$btnRooms", $btnRooms);
 
 		$allRooms.eq(0).find(".flat_section_1_type1").find(".info__type").each(function () {
 			$(this).on("click", function () {
@@ -4722,6 +4724,32 @@ function apartments() {
 							}
 						});
 					});
+				} else if ($(this).attr("data-room") == "room4") {
+
+					$(this).addClass("room-active").siblings().removeClass("room-active");
+					$allRooms.eq(roomIdx).show().siblings().hide();
+					$allRooms.eq(roomIdx).children().hide();
+					$allRooms.eq(roomIdx).children().eq(0).show();
+
+					$allRooms.eq(roomIdx).find(".flat_section_1_type1").find(".info__type").each(function () {
+						$(this).on("click", function () {
+							if ($(this).attr("data-type") == "type1") {
+								return;
+							} else if ($(this).attr("data-type") == "type1p") {
+								$(".flat_section_1_type1p").show().siblings().hide();
+							}
+						});
+					});
+
+					$allRooms.eq(roomIdx).find(".flat_section_1_type1p").find(".info__type").each(function () {
+						$(this).on("click", function () {
+							if ($(this).attr("data-type") == "type1") {
+								$(".flat_section_1_type1").show().siblings().hide();
+							} else if ($(this).attr("data-type") == "type1p") {
+								return;
+							}
+						});
+					});
 				} else if ($(this).attr("data-room") == "penthouse") {
 
 					$(this).addClass("room-active").siblings().removeClass("room-active");
@@ -4760,8 +4788,13 @@ function apartments() {
 		$section.find(".room").each(function () {
 			$(this).find(".flat").each(function () {
 				$(this).find(".apartment_layout").on("click", function () {
-					$(this).parent().find(".flat_modal").show();
-					OffScroll();
+					var bodyHeight = $("body").height();
+					var topPos = $(document).scrollTop();
+					$(this).parent().find(".flat_modal").show().css("height", bodyHeight + "px");
+
+					$(this).parent().find(".flat_modal").find(".flat_modal__container").css("margin-top", topPos + "px");
+
+					console.log($(this).parent().find(".flat_modal").find(".flat_modal__container"));
 				});
 			});
 		});
@@ -4825,7 +4858,7 @@ function modals() {
 
 	//function for opening modal of callback form
 	function formModal() {
-		$('.contact_appointment__link').magnificPopup({
+		$('.header_contacts__appointment-link').magnificPopup({
 			type: 'inline',
 			modal: true
 		});
@@ -4922,10 +4955,3 @@ function mainSlider() {
 		speed: 3000
 	});
 };
-
-function OffScroll() {
-	var winScrollTop = $(window).scrollTop();
-	$(window).bind('scroll', function () {
-		$(window).scrollTop(winScrollTop);
-	});
-}

@@ -26,13 +26,10 @@
         margin: 0;
         padding: 5px 10px 5px 10px;
     }
-    @include r(768){
+    @include r(1040){
         width: 33%;
         margin: 0;
         padding: 5px 10px 5px 10px;
-    }
-    @include r(1024){
-        margin-left: 34px;
     }
 }
 /*benefits info end*/
@@ -43,90 +40,15 @@
     width: 100%;
     overflow: hidden;
 }
-.benefits_galary__row{
-    overflow: hidden;
-}
-.benefits_galary__row--second{
-    overflow: hidden;
-    padding: 0 40px 0 134px;
-
-    & > .benefits_galary_item{
-        margin-top: 4px;
-    }
-
-    @include r(768){
-        padding: 0 0 0 0;
-        & > .benefits_galary_item{
-        margin-top: 70px;
-        &:last-child{
-            margin-left:284px;
-            margin-right:284px; 
-        }
-        }
-    }
-
-    @include r(667){
-        padding: 0 0 0 0;
-        & > .benefits_galary_item{
-        margin-top: 70px;
-        &:last-child{
-            margin-left: 233px;
-            margin-right: 233px; 
-        }
-        }
-    }
-    @include r(640){
-        padding: 0 0 0 0;
-        & > .benefits_galary_item{
-        margin-top: 70px;
-        &:last-child{
-            margin-left: 220px;
-            margin-right: 220px; 
-        }
-        }
-    }
-
-    @include r(568){
-        padding: 0 0 0 0;
-        & > .benefits_galary_item{
-        margin-top: 70px;
-        &:last-child{
-            margin-left: 184px;
-            margin-right: 184px; 
-        }
-        }
-    }
-
-    @include r(480){
-        padding: 0 0 0 0;
-        & > .benefits_galary_item{
-        margin-top: 70px;
-        &:last-child{
-            margin-left: 140px;
-            margin-right: 140px; 
-        }
-        }
-        
-    }
-
-    @include r(479){
-        padding: 0 0 0 0;
-        & > .benefits_galary_item{
-        margin-top: 70px;
-        &:last-child{
-            margin-left:auto;
-            margin-right:auto; 
-        }
-        }
-    }
-    
-}
 
 .benefits_galary_item{
     float: left;
     width: 200px;
     margin: 70px 26px 0 40px;
-
+    & a{
+            text-decoration: none;
+            display: block;
+    }
     @include helvetica-thin;
 
     font-size: em(18);
@@ -139,30 +61,25 @@
     }
     @include r(768){
         float: left;
-        margin-left: 92px;
-        margin-right: 92px;
+        margin-left: 80px;
+        margin-right: 80px;
     }
     @include r(736){
         float: left;
-        margin-left: 84px;
-        margin-right: 84px;
+        margin-left: 64px;
+        margin-right: 64px;
     }
     @include r(667){
         float: left;
-        margin-left: 66px;
-        margin-right: 66px;
+        margin-left: 55px;
+        margin-right: 55px;
     }
     @include r(640){
         float: left;
-        margin-left: 60px;
-        margin-right: 60px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
     @include r(568){
-        float: left;
-        margin-left: 42px;
-        margin-right: 42px;
-    }
-    @include r(480){
         float: left;
         margin-left: 20px;
         margin-right: 20px;
@@ -172,17 +89,16 @@
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 .benefits_galary_item__title{
     text-align: center;
     letter-spacing: 1px;
     margin: 11px 0px 0 0px;
-}
-.benefits_galary_item__title--link{
-    text-decoration: none;
     color: #272425;
 }
+
 
 .benefits_galary_item__more_info{
     display: none;
@@ -199,9 +115,8 @@
     padding: 49px 0px 0 0px;
     background-color: rgba(181, 181, 181, 0.6);
     
-    & a{
-    text-decoration: none;
     color:#fff;
+    & a{
     }
 }
 

@@ -15,6 +15,7 @@ $(document).ready(function () {
     modals();
     apartments();
     map();
+    
 
 });
 
@@ -34,9 +35,3 @@ function mainSlider() {
     });
 };
 
-function OffScroll() {
-    var winScrollTop = $(window).scrollTop();
-    $(window).bind('scroll', function () {
-        $(window).scrollTop(winScrollTop);
-    });
-}
