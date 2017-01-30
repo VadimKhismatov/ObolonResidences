@@ -648,6 +648,52 @@ body {
   line-height: 53px;
 }
 
+.container--header-footer {
+  overflow: visible;
+  display: block;
+  position: relative;
+}
+
+.header-footer {
+  background-color: #a59864;
+}
+
+.header-footer__icon {
+  position: absolute;
+  top: 0;
+  left: -117px;
+  background-image: url("../img/sprite.png");
+  width: 116px;
+  height: 200px;
+  background-position: -127px 0px;
+  width: 117px;
+}
+
+.header-footer__icon:hover {
+  background-image: url("../img/sprite.png");
+  width: 117px;
+  height: 200px;
+  background-position: 0px 0px;
+}
+
+.header-footer__info-block {
+  /*width: 307px;*/
+  margin: 0 0 0 40px;
+  padding: 31px 0 33px 0;
+}
+
+.header-footer__info-block .header-footer__info {
+  display: inline-block;
+  -webkit-columns: 307px 3;
+  -moz-columns: 307px 3;
+  columns: 307px 3;
+  font-family: "HelveticaNeueCyrLight", sans-serif;
+  font-style: normal;
+  font-size: 0.875em;
+  color: #fff;
+  line-height: 1.22;
+}
+
 /*header end*/
 /*apartments start*/
 .apartments {
@@ -667,7 +713,7 @@ body {
 
 .contact_tel {
   margin: 27px 0 0px 0;
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyrMedium", sans-serif;
   font-style: normal;
   font-size: 1.125em;
   color: #383430;
@@ -677,7 +723,7 @@ body {
 
 .contact_appointment {
   margin: 6px 0 0 0;
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   background-color: #901313;
@@ -698,7 +744,7 @@ body {
 .lang_link {
   display: block;
   text-decoration: none;
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   color: #a6a6a6;
@@ -759,7 +805,7 @@ body {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 0.75em;
@@ -812,14 +858,6 @@ body {
   overflow: hidden;
 }
 
-.container--slider {
-  overflow: visible;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-}
-
 .slide__img_wrap {
   width: 100%;
   overflow: hidden;
@@ -831,44 +869,6 @@ body {
   height: 100%;
 }
 
-.slide__footer {
-  background-color: #a59864;
-}
-
-.slide__icon {
-  position: absolute;
-  top: 0;
-  left: -117px;
-  background-image: url("../img/sprite.png");
-  width: 116px;
-  height: 200px;
-  background-position: -127px 0px;
-  width: 117px;
-}
-
-.slide__icon:hover {
-  background-image: url("../img/sprite.png");
-  width: 117px;
-  height: 200px;
-  background-position: 0px 0px;
-}
-
-/*slider footer start*/
-.slide__info_block {
-  width: 307px;
-  margin: 0 0 0 40px;
-  padding: 31px 0 33px 0;
-}
-
-.slide__info {
-  font-family: "HelveticaNeueCyrLight";
-  font-style: normal;
-  font-size: 0.875em;
-  color: #fff;
-  line-height: 1.22;
-}
-
-/*slider footer end*/
 /*slider end*/
 /*benefits info start*/
 .benefits_block__info {
@@ -880,7 +880,7 @@ body {
   width: 307px;
   margin: 0 0 0 40px;
   padding: 40px 0 40px 0;
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: bold;
@@ -920,7 +920,7 @@ body {
   float: left;
   width: 200px;
   margin: 70px 26px 0 40px;
-  font-family: "HelveticaNeueCyrThin";
+  font-family: "HelveticaNeueCyrThin", sans-serif;
   font-style: normal;
   font-size: 1.125em;
   font-weight: bold;
@@ -945,7 +945,7 @@ body {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 1.125em;
   text-align: center;
@@ -1026,7 +1026,7 @@ body {
 .benefits_modal__info h1 {
   float: left;
   margin: 52px 0 0 0;
-  font-family: "HelveticaNeueCyrThin";
+  font-family: "HelveticaNeueCyrThin", sans-serif;
   font-style: normal;
   font-size: 1.5em;
   font-weight: 100;
@@ -1059,7 +1059,7 @@ body {
 
 .benefits_modal__text_wrap {
   margin: 28px 0 0 0;
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: 300;
@@ -1091,7 +1091,7 @@ body {
 }
 
 .apartments__topline__title {
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 0.875em;
@@ -1108,7 +1108,7 @@ body {
   /*width: 307px;*/
   overflow: hidden;
   margin: 14px 0 0 0;
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyrMedium", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: 500;
@@ -1178,7 +1178,7 @@ body {
 }
 
 .info__title {
-  font-family: "HelveticaNeueCyrRoman";
+  font-family: "HelveticaNeueCyrRoman", sans-serif;
   font-style: normal;
   font-size: 1.125em;
   font-weight: 400;
@@ -1190,7 +1190,7 @@ body {
 
 .info__type-wrap {
   margin: 29px 0 0 0;
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyrMedium", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: 500;
@@ -1214,7 +1214,7 @@ body {
 .info__text {
   width: 150px;
   margin: 118px 0 0 0;
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 0.75em;
   font-weight: bold;
@@ -1240,7 +1240,7 @@ body {
 }
 
 .measurement table tr td {
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 0.75em;
   font-weight: bold;
@@ -1253,7 +1253,7 @@ body {
 }
 
 .measurement table tfoot td {
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyrMedium", sans-serif;
   font-style: normal;
   font-weight: 500;
   color: #b8aa86;
@@ -1263,7 +1263,7 @@ body {
 /*measurements links start*/
 .measurement__links {
   display: block;
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyrMedium", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: 500;
@@ -1368,7 +1368,7 @@ body {
 }
 
 .observation__title {
-  font-family: "HelveticaNeueCyrThin";
+  font-family: "HelveticaNeueCyrThin", sans-serif;
   font-style: normal;
   font-size: 1.5em;
   font-weight: 100;
@@ -1378,7 +1378,7 @@ body {
 }
 
 .observation__text {
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyrMedium", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: 500;
@@ -1489,7 +1489,7 @@ body {
   float: left;
   width: 307px;
   margin: 0 0 0 40px;
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: 300;
@@ -1538,7 +1538,7 @@ body {
 }
 
 .contact__title {
-  font-family: "HelveticaNeueCyrThin";
+  font-family: "HelveticaNeueCyrThin", sans-serif;
   font-style: normal;
   font-size: 1.5em;
   font-weight: 100;
@@ -1548,7 +1548,7 @@ body {
 }
 
 .contact__text {
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: 300;
@@ -1558,7 +1558,7 @@ body {
 }
 
 .contact__text--medium {
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyrMedium", sans-serif;
   font-style: normal;
   color: #a59864;
   font-weight: 500;
@@ -1566,7 +1566,7 @@ body {
 }
 
 .cantact__tel {
-  font-family: "HelveticaNeueCyrRoman";
+  font-family: "HelveticaNeueCyrRoman", sans-serif;
   font-style: normal;
   font-size: 1.25em;
   font-weight: 400;
@@ -1574,7 +1574,7 @@ body {
 }
 
 .contact__email {
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 1.25em;
   font-weight: 300;
@@ -1599,7 +1599,7 @@ body {
 .form__title {
   width: 346px;
   margin: 0 auto 16px auto;
-  font-family: "HelveticaNeueCyrThin";
+  font-family: "HelveticaNeueCyrThin", sans-serif;
   font-style: normal;
   font-size: 1.5em;
   font-weight: 100;
@@ -1615,7 +1615,7 @@ body {
   margin: 0 0 5px 0;
   padding: 0 0 0 11px;
   border: none;
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: 300;
@@ -1636,7 +1636,7 @@ body {
   background-color: #af1a1a;
   border-radius: 3px;
   text-transform: uppercase;
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyrMedium", sans-serif;
   font-style: normal;
   font-size: 0.875em;
   font-weight: 500;
@@ -1755,14 +1755,14 @@ body {
 }
 @media only screen and (max-width: 1024px) {
 
-  .slide__icon {
+  .header-footer__icon {
     position: static;
     float: left;
     clear: right;
     margin: 0 3px 0 1px;
   }
 
-  .slide__info_block {
+  .header-footer__info-block {
     width: 29%;
     margin: 0 0 0 0;
     padding: 5px 10px 5px 10px;
@@ -1895,6 +1895,23 @@ body {
 }
 @media only screen and (max-width: 768px) {
 
+  .container--header-footer {
+    display: block;
+  }
+
+  .header-footer__icon {
+    position: static;
+    float: left;
+    clear: right;
+    margin: 5px 3px 0 1px;
+  }
+
+  .header-footer__info-block {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 5px 10px 5px 10px;
+  }
+
   .top_contacts {
     margin-right: 10px;
   }
@@ -1912,25 +1929,8 @@ body {
     height: 480px;
   }
 
-  .container--slider {
-    display: block;
-  }
-
   .slide__img_wrap {
     height: 480px;
-  }
-
-  .slide__icon {
-    position: static;
-    float: left;
-    clear: right;
-    margin: 5px 3px 0 1px;
-  }
-
-  .slide__info_block {
-    width: 100%;
-    margin: 0 0 0 0;
-    padding: 5px 10px 5px 10px;
   }
 
   .benefit_info {

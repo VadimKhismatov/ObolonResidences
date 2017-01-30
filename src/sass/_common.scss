@@ -6,27 +6,27 @@ body{
 
 /*fonts mixins start*/
 @mixin helvetica-bold{
-  font-family: "HelveticaNeueCyrBold";
+  font-family: "HelveticaNeueCyrBold", sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 @mixin helvetica-medium{
-  font-family: "HelveticaNeueCyrMedium";
+  font-family: "HelveticaNeueCyrMedium", sans-serif;
   
   font-style: normal;
 }
 @mixin helvetica-light{
-  font-family: "HelveticaNeueCyrLight";
+  font-family: "HelveticaNeueCyrLight", sans-serif;
   
   font-style: normal;
 }
 @mixin helvetica-thin{
-  font-family: "HelveticaNeueCyrThin";
+  font-family: "HelveticaNeueCyrThin", sans-serif;
   
   font-style: normal;
 }
 @mixin helvetica-roman{
-  font-family: "HelveticaNeueCyrRoman";
+  font-family: "HelveticaNeueCyrRoman", sans-serif;
   
   font-style: normal;
 }

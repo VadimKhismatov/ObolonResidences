@@ -54,6 +54,70 @@
     }
 }
 
+.container--header-footer{
+    overflow: visible;
+    display: block;
+    position: relative;
+ 
+    @include r(768){
+        display: block;
+    }
+}
+
+.header-footer{
+    background-color: #a59864;
+}
+
+.header-footer__icon{
+    position: absolute;
+    top: 0;
+    left: -117px;
+    @include s(award);
+    &:hover{
+        @include s(award-hover);
+    }
+    width: 117px;
+
+    @include r(768){
+        position: static;
+        float: left;
+        clear: right;
+        margin: 5px 3px 0 1px;
+    }
+    @include r(1024){
+        position: static;
+        float: left;
+        clear: right;
+        margin: 0 3px 0 1px;
+    }
+}
+
+.header-footer__info-block{
+    /*width: 307px;*/
+    margin: 0 0 0 40px;
+    padding: 31px 0 33px 0;
+    
+    @include r(768){
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 5px 10px 5px 10px;
+    }
+    @include r(1024){
+        width: 29%;
+        margin: 0 0 0 0;
+        padding: 5px 10px 5px 10px;
+    }
+
+    .header-footer__info{
+        display: inline-block;
+        columns: 307px 3;
+        @include helvetica-light;
+        font-size: em(14);
+        color: #fff;
+        line-height: 1.22;
+    }
+}
+
 /*header end*/
 
 /*apartments start*/
