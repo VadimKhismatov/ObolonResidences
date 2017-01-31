@@ -40,6 +40,23 @@
     width: 100%;
     overflow: hidden;
 }
+.benefits_galary__row{
+    @include rmin(1024){
+        overflow: hidden;
+    }
+}
+.benefits_galary__row-second{
+    @include rmin(1024){
+        width: 798px;
+        margin: 0 auto;
+        & .benefits_galary_item{
+
+            margin: 5px 33px 0 33px;
+        
+        }
+    }
+    
+}
 
 .benefits_galary_item{
     float: left;
