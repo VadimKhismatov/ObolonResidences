@@ -1,6 +1,6 @@
 /*top-contacts start*/
 
-.top_contacts{
+.header_contacts{
     float: right;
     @include r(768){
         margin-right: 10px;
@@ -12,7 +12,7 @@
     }
 }
 
-.contact_block{
+.header_contacts__wrap{
     float: left;
     margin: 0 11px 0 0;
 
@@ -21,7 +21,7 @@
         margin: 0 0 0 0;
     }
 }
-.contact_tel{
+.header_contacts__tel{
     margin: 27px 0 0px 0;
     @include helvetica-medium;
     font-size: em(18);
@@ -29,7 +29,7 @@
     text-align: center;
     letter-spacing: 1px;
 }
-.contact_appointment{
+.header_contacts__appointment{
     margin: 6px 0 0 0;
     @include helvetica-light;
     font-size: em(14);
@@ -39,7 +39,7 @@
         text-align: center;
     }
 }
-.contact_appointment__link{
+.header_contacts__appointment-link{
     display: block;
     padding: 10px 15px 11px 16px;
     color: #ffffff;

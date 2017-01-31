@@ -1,6 +1,6 @@
 /*menu start*/
 .menu_left_wrap{
-    float: left;
+    display: inline-block;
     margin: 0 0 0 40px;
 }
 
@@ -14,28 +14,15 @@
 }
 .menu__item{
     float: left;
+    margin: 0 48px 0 0;
 }
-.menu__item--benefits{
-    margin: 0 49px 0 0;
+.menu__item--right{
+    margin: 0 0 0 61px;
 }
-.menu__item--location{
-    margin: 0 45px 0 0;
-}
-.menu__item--galary{
-    margin: 0 44px 0 0;
+.menu__item--last{
     letter-spacing: 0.5px;
 }
-.menu__item--apartments{
-    margin: 0 0 0 0;
-}
-.menu__item--developer{
-    margin: 0px 0 0 64px;
-    letter-spacing: 0.5px;
-}
-.menu__item--contacts{
-    margin: 0 0px 0 55px;
-    letter-spacing: 0.5px;
-}
+
 
 
 .menu__link{
@@ -86,7 +73,7 @@
     height:100%;
     
 }
-.menu_mobile{
+.mb_menu{
     display: none;
     text-align: center;
         a{

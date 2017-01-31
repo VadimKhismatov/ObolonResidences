@@ -9,7 +9,7 @@ function menu() {
 
     function mobileMenu() {
         var $mobMenuWrap = $(".mb_menu_wrap");
-        var $mobMenu = $(".menu_mobile");
+        var $mobMenu = $(".mb_menu");
         var $icon = $(".mb_menu_wrap__icon");
         var $links = $mobMenu.find(".menu__link");
         $mobMenuWrap.on("click", function (e) {
