@@ -1,5 +1,4 @@
-Link
-https://cdn.rawgit.com/VadimKhismatov/ObolonResidences/45a9a1c4/build/index.html
+Link https://goo.gl/z6a7Yh
 
 
 #How to use
