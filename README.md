@@ -1,3 +1,7 @@
+Link
+https://cdn.rawgit.com/VadimKhismatov/ObolonResidences/45a9a1c4/build/index.html
+
+
 #How to use
 
 Clone this repo and then in command line type:
